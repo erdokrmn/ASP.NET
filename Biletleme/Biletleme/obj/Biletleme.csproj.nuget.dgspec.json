@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\erdo\\Documents\\ASP.NET\\Biletleme\\Biletleme\\Biletleme.csproj": {}
+    "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Biletleme\\Biletleme\\Biletleme.csproj": {}
   },
   "projects": {
-    "C:\\Users\\erdo\\Documents\\ASP.NET\\Biletleme\\Biletleme\\Biletleme.csproj": {
+    "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Biletleme\\Biletleme\\Biletleme.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\erdo\\Documents\\ASP.NET\\Biletleme\\Biletleme\\Biletleme.csproj",
+        "projectUniqueName": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Biletleme\\Biletleme\\Biletleme.csproj",
         "projectName": "Biletleme",
-        "projectPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\Biletleme\\Biletleme\\Biletleme.csproj",
+        "projectPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Biletleme\\Biletleme\\Biletleme.csproj",
         "packagesPath": "C:\\Users\\erdo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\Biletleme\\Biletleme\\obj\\",
+        "outputPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Biletleme\\Biletleme\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -58,6 +68,18 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.23, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.1, )"
+            },
+            "jquery.datatables": {
+              "target": "Package",
+              "version": "[1.10.15, )"
             }
           },
           "imports": [

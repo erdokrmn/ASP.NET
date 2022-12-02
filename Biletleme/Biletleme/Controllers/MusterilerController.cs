@@ -2,9 +2,13 @@
 using Biletleme.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Linq.Dynamic.Core;
 
 namespace Biletleme.Controllers
 {
+    
     public class MusterilerController : Controller
     {
         private readonly MVCDemoDbContext mvcDemoDbContext;
@@ -21,17 +25,17 @@ namespace Biletleme.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-          var musteriler =  await mvcDemoDbContext.Musteriler.ToListAsync();
+            var musteriler = await mvcDemoDbContext.Musteriler.ToListAsync();
 
             return View(musteriler);
 
         }
 
         [HttpGet]
-        public async   Task<IActionResult> View(Guid id)
+        public async Task<IActionResult> View(Guid id)
         {
-            var musteri= await mvcDemoDbContext.Musteriler.FirstOrDefaultAsync(x=> x.Id == id);
-            if (musteri!=null)
+            var musteri = await mvcDemoDbContext.Musteriler.FirstOrDefaultAsync(x => x.Id == id);
+            if (musteri != null)
             {
                 var viewModel = new UpdateMusteriViewModel()
                 {
@@ -44,7 +48,7 @@ namespace Biletleme.Controllers
                     KayıtTarihi = musteri.KayıtTarihi,
                     Durum = musteri.Durum
                 };
-                return await Task.Run(() => View("View",viewModel));
+                return await Task.Run(() => View("View", viewModel));
             }
             return RedirectToAction("Index");
         }
@@ -53,7 +57,7 @@ namespace Biletleme.Controllers
         public async Task<IActionResult> Delete(UpdateMusteriViewModel updateMusteriViewModel)
         {
             var musteri = mvcDemoDbContext.Musteriler.Find(updateMusteriViewModel.Id);
-            if(musteri!=null)
+            if (musteri != null)
             {
                 mvcDemoDbContext.Musteriler.Remove(musteri);
                 await mvcDemoDbContext.SaveChangesAsync();
@@ -67,7 +71,7 @@ namespace Biletleme.Controllers
         public async Task<IActionResult> View(UpdateMusteriViewModel updateMusteriViewModel)
         {
             var musteri = await mvcDemoDbContext.Musteriler.FindAsync(updateMusteriViewModel.Id);
-            if (musteri!=null)
+            if (musteri != null)
             {
                 musteri.Ad = updateMusteriViewModel.Ad;
                 musteri.Soyad = updateMusteriViewModel.Soyad;
@@ -78,7 +82,7 @@ namespace Biletleme.Controllers
                 musteri.Durum = updateMusteriViewModel.Durum;
 
                 await mvcDemoDbContext.SaveChangesAsync();
-                
+
             }
             return RedirectToAction("Index");
         }
@@ -101,5 +105,7 @@ namespace Biletleme.Controllers
             await mvcDemoDbContext.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+        
     }
 }

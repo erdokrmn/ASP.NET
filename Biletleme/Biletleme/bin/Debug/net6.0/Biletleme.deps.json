@@ -8,9 +8,14 @@
     ".NETCoreApp,Version=v6.0": {
       "Biletleme/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
-          "System.Data.SqlClient": "4.8.5"
+          "System.Data.SqlClient": "4.8.5",
+          "System.Linq.Dynamic.Core": "1.2.23",
+          "jQuery": "3.6.1",
+          "jquery.datatables": "1.10.15"
         },
         "runtime": {
           "Biletleme.dll": {}
@@ -56,6 +61,12 @@
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
           }
+        }
+      },
+      "jQuery/3.6.1": {},
+      "jquery.datatables/1.10.15": {
+        "dependencies": {
+          "jQuery": "3.6.1"
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -585,6 +596,14 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Linq.Dynamic.Core/1.2.23": {
+        "runtime": {
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.2.23.0",
+            "fileVersion": "1.2.23.0"
+          }
+        }
+      },
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -788,6 +807,20 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "jQuery/3.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qkG79nkEvz6Oeabe5+qTB0O/FZagMmzpaafeAJZIppYTfrJim75VWNYuR26MLQCx8FWoqarqjpaDZ0/YubKmWg==",
+      "path": "jquery/3.6.1",
+      "hashPath": "jquery.3.6.1.nupkg.sha512"
+    },
+    "jquery.datatables/1.10.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9zRZ5zYafJHOwLU6sWoTM/agRx/dlu0HGQpGD/hEvqSEUJhSQjqJNTq77I97B+LCbh4eJrmNDS9PENiYY+0Isg==",
+      "path": "jquery.datatables/1.10.15",
+      "hashPath": "jquery.datatables.1.10.15.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -1131,6 +1164,13 @@
       "sha512": "sha512-3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "path": "system.io/4.3.0",
       "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.2.23": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZaHyxSnaLeEXqxon8nU9tiCqJX9Io3LkVFMjGpA7IiXdgX6QKNcouVkfSvTRl2QieM21uwafPpvRQ2Aof4Ce7A==",
+      "path": "system.linq.dynamic.core/1.2.23",
+      "hashPath": "system.linq.dynamic.core.1.2.23.nupkg.sha512"
     },
     "System.Memory/4.5.4": {
       "type": "package",
