@@ -1,0 +1,45 @@
+﻿@model Biletleme.Models.UpdateMusteriViewModel
+
+@{
+}
+
+<h1>Müşteri Düzenleme</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Ad</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ad</label>
+        <input type="text" class="form-control" asp-for="Ad" >
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Soyad</label>
+        <input type="text" class="form-control" asp-for="Soyad">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Doğum Tarihi</label>
+        <input type="date" class="form-control" asp-for="DoğumTarihi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Telefon Numarası</label>
+        <input type="number" class="form-control" asp-for="TelNo">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">E-Mail</label>
+        <input type="email" class="form-control" asp-for="EMail">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Kayıt Tarihi</label>
+        <input type="date" class="form-control" asp-for="KayıtTarihi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Durum(Aktif mi?)</label>
+        <input type="checkbox" class="form-check" asp-for="Durum">
+    </div>
+    <button type="submit" class="btn btn-primary">Sumbit</button>
+
+    <button type="submit" class="btn btn-danger"
+            asp-action="Delete"
+            asp-controller="Musteriler">Sil</button>
+</form>

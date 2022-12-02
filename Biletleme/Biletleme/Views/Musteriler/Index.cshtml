@@ -1,0 +1,39 @@
+﻿@model List<Biletleme.Models.Musteri>
+
+@{
+}
+
+<h1>Müşteriler</h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Ad</th>
+			<th>Soyad</th>
+			<th>Doğum Tarihi</th>
+			<th>Telefon Numarası</th>
+			<th>E-Mail</th>
+			<th>Kayıt Tarihi</th>
+			<th>Durum</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var musteri in Model)
+		{
+			<tr>
+				<td>@musteri.Id</td>
+				<td>@musteri.Ad</td>
+				<td>@musteri.Soyad</td>
+				<td>@musteri.DoğumTarihi.ToString("dd-MM-yyyy")</td>
+				<td>@musteri.TelNo</td>
+				<td>@musteri.EMail</td>
+				<td>@musteri.KayıtTarihi.ToString("dd-MM-yyyy")</td>
+				<td>@musteri.Durum</td>
+				<td>
+					<a href="Musteriler/View/@musteri.Id">Düzenle</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
