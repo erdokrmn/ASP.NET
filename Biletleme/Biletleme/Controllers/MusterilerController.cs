@@ -22,9 +22,11 @@ namespace Biletleme.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public async Task<IActionResult> Index()
         {
+            //Listeleme kısmı 
             var musteriler = await mvcDemoDbContext.Musteriler.ToListAsync();
 
             return View(musteriler);
@@ -34,6 +36,7 @@ namespace Biletleme.Controllers
         [HttpGet]
         public async Task<IActionResult> View(Guid id)
         {
+            //Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
             var musteri = await mvcDemoDbContext.Musteriler.FirstOrDefaultAsync(x => x.Id == id);
             if (musteri != null)
             {
@@ -56,6 +59,7 @@ namespace Biletleme.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(UpdateMusteriViewModel updateMusteriViewModel)
         {
+            //silme kısmı
             var musteri = mvcDemoDbContext.Musteriler.Find(updateMusteriViewModel.Id);
             if (musteri != null)
             {
@@ -70,6 +74,7 @@ namespace Biletleme.Controllers
         [HttpPost]
         public async Task<IActionResult> View(UpdateMusteriViewModel updateMusteriViewModel)
         {
+            //Düzenleme yapılan kısım
             var musteri = await mvcDemoDbContext.Musteriler.FindAsync(updateMusteriViewModel.Id);
             if (musteri != null)
             {
@@ -90,6 +95,7 @@ namespace Biletleme.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(AddMusteriViewModel addMusteriRequest)
         {
+            //Kayıt kısmı
             var musteri = new Musteri()
             {
                 Id = Guid.NewGuid(),
