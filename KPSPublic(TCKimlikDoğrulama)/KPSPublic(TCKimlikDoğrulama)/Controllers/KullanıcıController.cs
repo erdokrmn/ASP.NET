@@ -23,8 +23,12 @@ namespace KPSPublic_TCKimlikDoğrulama_.Controllers
             var client = new TcNoDoğrulama.KPSPublicSoapClient(TcNoDoğrulama.KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
             var response = await client.TCKimlikNoDogrulaAsync(kullanıcı.TCKimlikNo, kullanıcı.Ad, kullanıcı.Soyad, kullanıcı.DogumYılı);
             var result = response.Body.TCKimlikNoDogrulaResult;
-            
-
+            ViewResult resultTrue = View("true");
+            int a = 5 + 4 + 3;
+            if (result==true)
+            {
+                return resultTrue;
+            }
             return View();
 
 

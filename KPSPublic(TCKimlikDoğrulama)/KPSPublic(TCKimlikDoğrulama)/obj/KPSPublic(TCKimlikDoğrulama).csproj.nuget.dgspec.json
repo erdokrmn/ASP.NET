@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\erdo\\Documents\\ASP.NET\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj": {}
+    "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj": {}
   },
   "projects": {
-    "C:\\Users\\erdo\\Documents\\ASP.NET\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj": {
+    "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\erdo\\Documents\\ASP.NET\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj",
+        "projectUniqueName": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj",
         "projectName": "KPSPublic(TCKimlikDoğrulama)",
-        "projectPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj",
+        "projectPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj",
         "packagesPath": "C:\\Users\\erdo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\obj\\",
+        "outputPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

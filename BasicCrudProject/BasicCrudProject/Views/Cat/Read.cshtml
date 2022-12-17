@@ -1,0 +1,10 @@
+﻿@model List<BasicCrudProject.Models.Cat>
+
+<ul>
+	@foreach (var cat in Model)
+	{
+		<li>@cat.Id</li>
+		<li>@cat.CatName</li>
+		<li>@cat.CatBreed</li>
+	}
+</ul>
