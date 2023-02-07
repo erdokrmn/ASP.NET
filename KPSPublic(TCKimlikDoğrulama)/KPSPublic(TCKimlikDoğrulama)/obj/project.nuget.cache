@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FDTJ7sjYV2fMCUw4A8U4b6AC3PCjDMJH8OsqXVlCcWCIjx5yvLQiQF0szazfbOMohy4fDlGk/Xkxl+fnAl63HQ==",
+  "dgSpecHash": "VIS5tFokEPnbIPGgESz0ecLGXL08zB4hdgPDeDW9PmMsf51xWYnWl1Rh5yWyHH87bZOVGxG2PJf5o/v4GWj4tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj",
+  "projectFilePath": "C:\\Users\\erdo\\Documents\\GitHub\\ASP.NET\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama)\\KPSPublic(TCKimlikDoğrulama).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erdo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",

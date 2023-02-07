@@ -1,28 +1,35 @@
 ﻿@model KPSPublic_TCKimlikDoğrulama_.Models.Kullanıcı
-@{
-
-}
 
 <h2>Tc Sorgulama</h2>
 <label>ADINIZI SOYADINIZI BÜYÜK HARFLE YAZMAZSANIZ ÇALIŞMAZ.</label>
-<form method="post" action="Index" class="mt-5">
-    <div class="mb-3">
-        <label for="" class="form-label">Ad</label>
-        <input type="text" class="form-control" asp-for="Ad">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Soyad</label>
-        <input type="text" class="form-control" asp-for="Soyad">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Doğum Tarihi</label>
-        <input type="number" class="form-control" asp-for="DogumYılı">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">TC Kimlik Numarası</label>
-        <input type="number" class="form-control" asp-for="TCKimlikNo">
-    </div>
-   
-    <button type="submit" asp-action="Index" class="btn btn-primary">Sumbit</button>
+@using (Html.BeginForm("Index", "Kullanıcı", FormMethod.Post))
+{
+    <form method="post" action="Index" class="mt-5">
+        <div class="mb-3">
+            <label for="" class="form-label">Ad</label>
+            <input type="text" class="form-control" asp-for="Ad">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Soyad</label>
+            <input type="text" class="form-control" asp-for="Soyad">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Doğum Tarihi</label>
+            <input type="number" class="form-control" asp-for="DogumYılı">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">TC Kimlik Numarası</label>
+            <input type="number" class="form-control" asp-for="TCKimlikNo">
+        </div>
+        <button type="submit" asp-action="Index" class="btn btn-primary">Sumbit</button>
 
-</form>
+    </form>
+}
+@if (ViewBag.result == true)
+{
+    <p>Bu kişi sistemde kayıtlıdır.</p>
+}
+@if (ViewBag.result == false)
+{
+    <p>Bu kişi sistemde kayıtlı değildir.</p>
+}

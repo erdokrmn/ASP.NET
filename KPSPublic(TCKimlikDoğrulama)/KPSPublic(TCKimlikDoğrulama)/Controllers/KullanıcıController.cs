@@ -10,9 +10,11 @@ namespace KPSPublic_TCKimlikDoğrulama_.Controllers
 {
     public class KullanıcıController : Controller
     {
+        bool result=false;
         [HttpGet]
         public IActionResult Index()
         {
+           
             return View();
         }
        
@@ -22,12 +24,16 @@ namespace KPSPublic_TCKimlikDoğrulama_.Controllers
         {
             var client = new TcNoDoğrulama.KPSPublicSoapClient(TcNoDoğrulama.KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
             var response = await client.TCKimlikNoDogrulaAsync(kullanıcı.TCKimlikNo, kullanıcı.Ad, kullanıcı.Soyad, kullanıcı.DogumYılı);
-            var result = response.Body.TCKimlikNoDogrulaResult;
-            ViewResult resultTrue = View("true");
-            int a = 5 + 4 + 3;
+            result = response.Body.TCKimlikNoDogrulaResult;
             if (result==true)
             {
-                return resultTrue;
+                ViewBag.result = result;
+                
+            }
+            else
+            {
+                ViewBag.result = result;
+
             }
             return View();
 
