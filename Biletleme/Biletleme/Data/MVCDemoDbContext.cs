@@ -9,6 +9,7 @@ namespace Biletleme.Data
 		{
 		}
 		public DbSet<Musteri> Musteriler { get; set; }
+       
 
-	}
+    }
 }

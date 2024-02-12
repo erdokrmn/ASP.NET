@@ -1,0 +1,5 @@
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Infrastructure\obj\Debug\net6.0\EShopAPI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Infrastructure\obj\Debug\net6.0\EShopAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Infrastructure\obj\Debug\net6.0\EShopAPI.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Infrastructure\obj\Debug\net6.0\EShopAPI.Infrastructure.AssemblyInfo.cs
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Infrastructure\obj\Debug\net6.0\EShopAPI.Infrastructure.csproj.CoreCompileInputs.cache

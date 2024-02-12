@@ -1,0 +1,12 @@
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\bin\Debug\net6.0\EShopAPI.Domain.deps.json
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\bin\Debug\net6.0\EShopAPI.Domain.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\bin\Debug\net6.0\EShopAPI.Domain.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\EShopAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\EShopAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\EShopAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\EShopAPI.Domain.AssemblyInfo.cs
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\EShopAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\EShopAPI.Domain.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\refint\EShopAPI.Domain.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\EShopAPI.Domain.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Domain\obj\Debug\net6.0\ref\EShopAPI.Domain.dll

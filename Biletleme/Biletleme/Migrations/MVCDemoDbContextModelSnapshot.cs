@@ -22,6 +22,21 @@ namespace Biletleme.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Biletleme.Models.Cat", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CatName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cats");
+                });
+
             modelBuilder.Entity("Biletleme.Models.Musteri", b =>
                 {
                     b.Property<Guid>("Id")
@@ -29,6 +44,7 @@ namespace Biletleme.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Ad")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DoğumTarihi")
@@ -38,15 +54,18 @@ namespace Biletleme.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("EMail")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("KayıtTarihi")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Soyad")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TelNo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

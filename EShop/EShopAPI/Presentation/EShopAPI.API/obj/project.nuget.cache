@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "gpUiu6Etpyq8UY4XvPLIfJRl/2+iYiQa+Mj/VJ12krxZV5p/EvOhPFoL+d8YidBC+58EMEJxSFSCW1qEx05kdw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\EShop\\EShopAPI\\Presentation\\EShopAPI.API\\EShopAPI.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erdo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\postsharp.redist\\2023.0.3\\postsharp.redist.2023.0.3.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

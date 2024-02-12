@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pocJGeInwuq8KsgzkuZaioYDd2IWzgmuXM1asngnQ1P0nWtd5iN6yO6Ci4Fi7dB/yQ2VDYI441Pnb9UqFg8K+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\EShop\\EShopAPI\\Infrastructure\\EShopAPI.Persistence\\EShopAPI.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erdo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\postsharp.redist\\2023.0.3\\postsharp.redist.2023.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

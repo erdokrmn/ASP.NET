@@ -1,0 +1,20 @@
+{
+  "runtimeOptions": {
+    "tfm": "net7.0",
+    "frameworks": [
+      {
+        "name": "Microsoft.NETCore.App",
+        "version": "7.0.1"
+      },
+      {
+        "name": "Microsoft.AspNetCore.App",
+        "version": "7.0.1"
+      }
+    ],
+    "additionalProbingPaths": [
+      "C:\\Users\\erdo\\.nuget\\packages\\",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+      "C:\\ProgramData\\PostSharp\\NuGetFallback"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.csproj.AssemblyReference.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.AssemblyInfoInputs.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.AssemblyInfo.cs
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\bin\Debug\net6.0\EShopAPI.Persistence.deps.json
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\bin\Debug\net6.0\EShopAPI.Persistence.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\bin\Debug\net6.0\EShopAPI.Persistence.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\bin\Debug\net6.0\EShopAPI.Application.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\bin\Debug\net6.0\EShopAPI.Domain.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\bin\Debug\net6.0\EShopAPI.Application.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\bin\Debug\net6.0\EShopAPI.Domain.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.csproj.CopyComplete
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\refint\EShopAPI.Persistence.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\EShopAPI.Persistence.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Infrastructure\EShopAPI.Persistence\obj\Debug\net6.0\ref\EShopAPI.Persistence.dll

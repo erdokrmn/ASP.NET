@@ -1,7 +1,16 @@
+using BasicCrudProject.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddDbContext<TicketSaleDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("TicketSaleDbConnectionString")));
 
 var app = builder.Build();
 

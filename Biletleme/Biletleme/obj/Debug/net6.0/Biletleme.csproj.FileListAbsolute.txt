@@ -176,3 +176,8 @@ C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\re
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\Biletleme.pdb
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\Biletleme.genruntimeconfig.cache
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\ref\Biletleme.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\staticwebassets\msbuild.Biletleme.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\staticwebassets\msbuild.build.Biletleme.props
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Biletleme.props
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Biletleme.props
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\Biletleme\Biletleme\obj\Debug\net6.0\staticwebassets.pack.json

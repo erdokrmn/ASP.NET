@@ -1,0 +1,15 @@
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\bin\Debug\net6.0\EShopAPI.Application.deps.json
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\bin\Debug\net6.0\EShopAPI.Application.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\bin\Debug\net6.0\EShopAPI.Application.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\bin\Debug\net6.0\EShopAPI.Domain.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\bin\Debug\net6.0\EShopAPI.Domain.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.csproj.AssemblyReference.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.AssemblyInfoInputs.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.AssemblyInfo.cs
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.csproj.CoreCompileInputs.cache
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.csproj.CopyComplete
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\refint\EShopAPI.Application.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\EShopAPI.Application.pdb
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\EShop\EShopAPI\Core\EShopAPI.Application\obj\Debug\net6.0\ref\EShopAPI.Application.dll
