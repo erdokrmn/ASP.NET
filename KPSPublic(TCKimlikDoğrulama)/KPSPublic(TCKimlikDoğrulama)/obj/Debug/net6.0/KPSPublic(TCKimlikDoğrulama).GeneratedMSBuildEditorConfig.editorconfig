@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KPSPublic_TCKimlikDoğrulama_
 build_property.RootNamespace = KPSPublic_TCKimlikDoğrulama_
-build_property.ProjectDir = C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\
+build_property.ProjectDir = C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)
+build_property.MSBuildProjectDirectory = C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Home/Index.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Home/Privacy.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Kullanıcı/Index.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Kullanıcı/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuxLFjxLFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Kullanıcı/true.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Kullanıcı/true.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuxLFjxLFcdHJ1ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Shared/Error.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/_ViewImports.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/_ViewStart.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Shared/_Layout.cshtml]
+[C:/Users/erdo/Documents/GitHub/ASP.NET/KPSPublic(TCKimlikDoğrulama)/KPSPublic(TCKimlikDoğrulama)/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-18yih114t8
