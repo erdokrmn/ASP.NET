@@ -12,6 +12,10 @@ build_property.RootNamespace = LoginAndRegistration
 build_property.ProjectDir = C:\Users\erdo\Documents\ASP.NET\ASP.NET-\LoginAndRegistration\LoginAndRegistration\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\erdo\Documents\ASP.NET\ASP.NET-\LoginAndRegistration\LoginAndRegistration
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/LoginAndRegistration/LoginAndRegistration/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -97,12 +97,15 @@ C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\KPSPublic(TCKimlikDoğrulama).genruntimeconfig.cache
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\ref\KPSPublic(TCKimlikDoğrulama).dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\staticwebassets\msbuild.KPSPublic(TCKimlikDoğrulama).Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\staticwebassets\msbuild.build.KPSPublic(TCKimlikDoğrulama).props
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.KPSPublic(TCKimlikDoğrulama).props
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.KPSPublic(TCKimlikDoğrulama).props
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\staticwebassets.pack.json
 =======
+=======
+>>>>>>> 740b779e440b085e6e7ae69113d71e702902b9a7
 C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\bin\Debug\net6.0\appsettings.json
 C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\bin\Debug\net6.0\Connected Services\TcNoDoğrulama\ConnectedService.json
@@ -152,4 +155,7 @@ C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(T
 C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\KPSPublic(TCKimlikDoğrulama).pdb
 C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\KPSPublic(TCKimlikDoğrulama).genruntimeconfig.cache
 C:\Users\erdo\Documents\GitHub\ASP.NET\KPSPublic(TCKimlikDoğrulama)\KPSPublic(TCKimlikDoğrulama)\obj\Debug\net6.0\ref\KPSPublic(TCKimlikDoğrulama).dll
+<<<<<<< HEAD
+>>>>>>> 740b779e440b085e6e7ae69113d71e702902b9a7
+=======
 >>>>>>> 740b779e440b085e6e7ae69113d71e702902b9a7
