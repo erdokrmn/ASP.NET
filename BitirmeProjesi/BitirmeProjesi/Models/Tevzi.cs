@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BitirmeProjesi.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace BitirmeProjesiEkranlar.Models
 {

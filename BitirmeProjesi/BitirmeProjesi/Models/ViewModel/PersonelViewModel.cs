@@ -5,7 +5,8 @@ namespace BitirmeProjesi.Models.ViewModel
 {
     public class PersonelViewModel
     {
-        public string Ad { get; set; }
+		public Guid Id { get; set; }
+		public string Ad { get; set; }
         [Required]
         public string Soyad { get; set; }
         [Required]
@@ -24,7 +25,7 @@ namespace BitirmeProjesi.Models.ViewModel
         public string Adres { get; set; }
         [Required]
         public bool Cinsiyet { get; set; }
-        public bool EMail { get; set; }
+        public string EMail { get; set; }
         [Required]
         public DateTime DoğumYılı { get; set; }
         [Required]

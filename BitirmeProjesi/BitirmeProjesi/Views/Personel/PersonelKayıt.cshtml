@@ -15,7 +15,7 @@
     </div>
     <div class="mb-3">
         <label for="" class="form-label">TC Kimlik Numarası</label>
-        <input type="date" class="form-control" asp-for="TcNo">
+        <input type="number" class="form-control" asp-for="TcNo">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Telefon Numarası</label>
@@ -23,40 +23,47 @@
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Kan Grubu</label>
-        <input type="email" class="form-control" asp-for="KanGrubu">
+        <input type="text" class="form-control" asp-for="KanGrubu">
     </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Doğum Yeri</label>
+        <input type="text" class="form-control" asp-for="DoğumYeri">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">İl</label>
+        <input type="text" class="form-control" asp-for="Il">
+    </div>
+     <div class="mb-3">
+        <label for="" class="form-label">İlce</label>
+        <input type="text" class="form-control" asp-for="Ilce">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Adres</label>
+        <input type="text" class="form-control" asp-for="Adres">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Cinsiyet</label>
+        <input type="checkbox" class="form-check" asp-for="Cinsiyet">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Doğum Yılı</label>
+        <input type="text" class="form-control" asp-for="DoğumYılı">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">EDevlet Şifresi</label>
+        <input type="text" class="form-control" asp-for="EDevletŞifre">
+    </div>
+   
     <div class="mb-3">
         <label for="" class="form-label">E-Mail Adresi</label>
         <input type="email" class="form-control" asp-for="EMail">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Doğum Yeri</label>
-        <input type="email" class="form-control" asp-for="DoğumYeri">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">İl</label>
-        <input type="email" class="form-control" asp-for="Il">
-    </div>
-     <div class="mb-3">
-        <label for="" class="form-label">İlce</label>
-        <input type="email" class="form-control" asp-for="Ilce">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Adres</label>
-        <input type="email" class="form-control" asp-for="Adres">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">EDevlet Şifresi</label>
-        <input type="email" class="form-control" asp-for="EDevletŞifre">
-    </div>
-    <div class="mb-3">
         <label for="" class="form-label">Acil Durumda Ulaşılacak Kişinin Numarası</label>
-        <input type="email" class="form-control" asp-for="AcilDurumdaUlaşılacakKişiNo">
+        <input type="number" class="form-control" asp-for="AcilDurumdaUlaşılacakKişiNo">
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Doğum Yılı</label>
-        <input type="date" class="form-control" asp-for="DoğumYılı">
-    </div>
+   
     <div class="mb-3">
         <label for="" class="form-label">İşe Başlama Tarihi</label>
         <input type="date" class="form-control" asp-for="IseBaslamaTarihi">
@@ -69,9 +76,6 @@
         <label for="" class="form-label">Çalışma Durumu</label>
         <input type="checkbox" class="form-check" asp-for="CalısmaDurumu">
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Cinsiyet</label>
-        <input type="checkbox" class="form-check" asp-for="Cinsiyet">
-    </div>
-    <button type="submit" class="btn btn-primary">Sumbit</button>
+   
+    <button type="submit" class="btn btn-primary">Kayıt Et</button>
 </form>

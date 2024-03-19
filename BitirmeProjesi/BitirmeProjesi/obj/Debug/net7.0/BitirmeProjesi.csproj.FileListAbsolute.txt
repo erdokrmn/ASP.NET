@@ -409,3 +409,4 @@ C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\obj\Debug
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\obj\Debug\net7.0\BitirmeProjesi.pdb
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\obj\Debug\net7.0\BitirmeProjesi.genruntimeconfig.cache
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\obj\Debug\net7.0\ref\BitirmeProjesi.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\bin\Debug\net7.0\libman.json

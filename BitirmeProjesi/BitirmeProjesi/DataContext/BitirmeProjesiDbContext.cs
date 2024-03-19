@@ -1,4 +1,5 @@
-﻿using BitirmeProjesiEkranlar.Models;
+﻿using BitirmeProjesi.Models;
+using BitirmeProjesiEkranlar.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BitirmeProjesi.DataContext
