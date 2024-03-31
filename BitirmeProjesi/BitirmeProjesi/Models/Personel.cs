@@ -28,7 +28,7 @@ namespace BitirmeProjesi.Models
 		[Required]
 		public bool Cinsiyet { get; set; }
 		[Required]
-		public DateTime DoğumYılı { get; set; }
+		public string DoğumYılı { get; set; }
 		[Required]
 		public string EDevletŞifre { get; set; }
 		public string EMail { get; set; }

@@ -66,11 +66,11 @@
    
     <div class="mb-3">
         <label for="" class="form-label">İşe Başlama Tarihi</label>
-        <input type="date" class="form-control" asp-for="IseBaslamaTarihi">
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="IseBaslamaTarihi">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">İşten Ayrılma Tarihi</label>
-        <input type="date" class="form-control" asp-for="IstenAyrılmaTarihi">
+        <input type="date" value="null" class="form-control" asp-for="IstenAyrılmaTarihi">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Çalışma Durumu</label>

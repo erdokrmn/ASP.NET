@@ -22,6 +22,81 @@ namespace BitirmeProjesi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BitirmeProjesi.Models.Personel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AcilDurumdaUlaşılacakKişiNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Adres")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("CalısmaDurumu")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Cinsiyet")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("DoğumYeri")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DoğumYılı")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EDevletŞifre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EMail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Il")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ilce")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("IseBaslamaTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("IstenAyrılmaTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("KanGrubu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Soyad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TcNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TelefonNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Personeller");
+                });
+
             modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Gemi", b =>
                 {
                     b.Property<Guid>("Id")
@@ -171,80 +246,6 @@ namespace BitirmeProjesi.Migrations
                     b.ToTable("Masraflar");
                 });
 
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Personel", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("AcilDurumdaUlaşılacakKişiNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Ad")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Adres")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("CalısmaDurumu")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("Cinsiyet")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("DoğumYeri")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DoğumYılı")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("EDevletŞifre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EMail")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Il")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Ilce")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("IseBaslamaTarihi")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("IstenAyrılmaTarihi")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("KanGrubu")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Soyad")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TcNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TelefonNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Personeller");
-                });
-
             modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Tevzi", b =>
                 {
                     b.Property<Guid>("Id")
@@ -314,7 +315,7 @@ namespace BitirmeProjesi.Migrations
 
             modelBuilder.Entity("BitirmeProjesiEkranlar.Models.GemiSureci", b =>
                 {
-                    b.HasOne("BitirmeProjesiEkranlar.Models.Personel", "CalısanPersoneller")
+                    b.HasOne("BitirmeProjesi.Models.Personel", "CalısanPersoneller")
                         .WithMany("GemiSürecleri")
                         .HasForeignKey("CalısanPersonellerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -333,7 +334,7 @@ namespace BitirmeProjesi.Migrations
 
             modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Tevzi", b =>
                 {
-                    b.HasOne("BitirmeProjesiEkranlar.Models.Personel", "Personel")
+                    b.HasOne("BitirmeProjesi.Models.Personel", "Personel")
                         .WithMany("Tevziler")
                         .HasForeignKey("PersonelId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -344,7 +345,7 @@ namespace BitirmeProjesi.Migrations
 
             modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Zimmet", b =>
                 {
-                    b.HasOne("BitirmeProjesiEkranlar.Models.Personel", "ZimmetEdilenKisi")
+                    b.HasOne("BitirmeProjesi.Models.Personel", "ZimmetEdilenKisi")
                         .WithMany("ZimmetEdilenPersoneller")
                         .HasForeignKey("ZimmetEdilenKisiId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -361,6 +362,15 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("ZimmetEdilenMalzeme");
                 });
 
+            modelBuilder.Entity("BitirmeProjesi.Models.Personel", b =>
+                {
+                    b.Navigation("GemiSürecleri");
+
+                    b.Navigation("Tevziler");
+
+                    b.Navigation("ZimmetEdilenPersoneller");
+                });
+
             modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Gemi", b =>
                 {
                     b.Navigation("gemiEnvanterileri");
@@ -374,15 +384,6 @@ namespace BitirmeProjesi.Migrations
             modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Malzeme", b =>
                 {
                     b.Navigation("ZimmetEdilenMalzemeler");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Personel", b =>
-                {
-                    b.Navigation("GemiSürecleri");
-
-                    b.Navigation("Tevziler");
-
-                    b.Navigation("ZimmetEdilenPersoneller");
                 });
 #pragma warning restore 612, 618
         }

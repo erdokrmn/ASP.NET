@@ -9,170 +9,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.bootstrap.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.bootstrap.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.bootstrap.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.bootstrap4.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.bootstrap4.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.bootstrap4.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.bootstrap4.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.foundation.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.foundation.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.foundation.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.foundation.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.jqueryui.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.jqueryui.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.jqueryui.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.jqueryui.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.material.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.material.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.material.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.material.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.semanticui.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.semanticui.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.semanticui.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.semanticui.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.uikit.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.uikit.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\dataTables.uikit.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\dataTables.uikit.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\jquery.dataTables.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\jquery.dataTables.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\jquery.dataTables.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\jquery.dataTables.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\jquery.dataTables_themeroller.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\jquery.dataTables_themeroller.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\css\\jquery.dataTables_themeroller.min.css",
-      "PackagePath": "staticwebassets\\datatables\\css\\jquery.dataTables_themeroller.min.css"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\images\\sort_asc.png",
-      "PackagePath": "staticwebassets\\datatables\\images\\sort_asc.png"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\images\\sort_asc_disabled.png",
-      "PackagePath": "staticwebassets\\datatables\\images\\sort_asc_disabled.png"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\images\\sort_both.png",
-      "PackagePath": "staticwebassets\\datatables\\images\\sort_both.png"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\images\\sort_desc.png",
-      "PackagePath": "staticwebassets\\datatables\\images\\sort_desc.png"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\images\\sort_desc_disabled.png",
-      "PackagePath": "staticwebassets\\datatables\\images\\sort_desc_disabled.png"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.bootstrap.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.bootstrap.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.bootstrap.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.bootstrap.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.bootstrap4.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.bootstrap4.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.bootstrap4.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.bootstrap4.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.dataTables.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.dataTables.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.dataTables.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.dataTables.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.foundation.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.foundation.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.foundation.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.foundation.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.jqueryui.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.jqueryui.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.jqueryui.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.jqueryui.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.material.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.material.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.material.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.material.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.semanticui.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.semanticui.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.semanticui.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.semanticui.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.uikit.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.uikit.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\dataTables.uikit.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\dataTables.uikit.min.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\jquery.dataTables.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\jquery.dataTables.js"
-    },
-    {
-      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\datatables\\js\\jquery.dataTables.min.js",
-      "PackagePath": "staticwebassets\\datatables\\js\\jquery.dataTables.min.js"
-    },
-    {
       "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -363,6 +199,178 @@
     {
       "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
       "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

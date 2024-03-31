@@ -1,0 +1,85 @@
+﻿@model BitirmeProjesi.Models.ViewModel.UpdatePersonelViewModel;
+
+@{
+}
+<form method="post" action="PersonelDuzenleme" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ad</label>
+        <input type="text" class="form-control" asp-for="Ad">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Soyad</label>
+        <input type="text" class="form-control" asp-for="Soyad">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">TC Kimlik Numarası</label>
+        <input type="number" class="form-control" asp-for="TcNo">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Telefon Numarası</label>
+        <input type="number" class="form-control" asp-for="TelefonNo">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Kan Grubu</label>
+        <input type="text" class="form-control" asp-for="KanGrubu">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Doğum Yeri</label>
+        <input type="text" class="form-control" asp-for="DoğumYeri">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">İl</label>
+        <input type="text" class="form-control" asp-for="Il">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">İlce</label>
+        <input type="text" class="form-control" asp-for="Ilce">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Adres</label>
+        <input type="text" class="form-control" asp-for="Adres">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Cinsiyet</label>
+        <input type="checkbox" class="form-check" asp-for="Cinsiyet">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Doğum Yılı</label>
+        <input type="text" class="form-control" asp-for="DoğumYılı">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">EDevlet Şifresi</label>
+        <input type="text" class="form-control" asp-for="EDevletŞifre">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">E-Mail Adresi</label>
+        <input type="email" class="form-control" asp-for="EMail">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Acil Durumda Ulaşılacak Kişinin Numarası</label>
+        <input type="number" class="form-control" asp-for="AcilDurumdaUlaşılacakKişiNo">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">İşe Başlama Tarihi</label>
+        <input type="date" class="form-control" asp-for="IseBaslamaTarihi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">İşten Ayrılma Tarihi</label>
+        <input type="date" class="form-control" asp-for="IstenAyrılmaTarihi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Çalışma Durumu</label>
+        <input type="checkbox" class="form-check" asp-for="CalısmaDurumu">
+    </div>
+    <button type="submit" class="btn btn-primary">Düzenle</button>
+      <button type="submit" class="btn btn-danger"
+            asp-action="Delete"
+            asp-controller="Personel">Sil</button>
+</form>
