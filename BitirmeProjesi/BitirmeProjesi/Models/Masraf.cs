@@ -1,17 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BitirmeProjesiEkranlar.Models
+
+namespace BitirmeProjesi.Models
 {
     public class Masraf
     {
         public Guid Id { get; set; }
         [Required]
         public string MasrafAdı { get; set; }
+        
+        public string? MasrafTipi { get; set; }
         [Required]
-        public string MasrafTipi { get; set; }
+        public int MasrafTutarı { get; set; }
         [Required]
-        public string MasrafTutarı { get; set; }
-        [Required]
-        public string MasrafTarihi { get; set; }
+        public DateTime MasrafTarihi { get; set; }
     }
 }

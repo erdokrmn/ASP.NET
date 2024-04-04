@@ -1,0 +1,61 @@
+﻿@model List<BitirmeProjesi.Models.Malzeme>
+
+@{
+
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css">
+<div class="table-responsive">
+	<table id="Malzeme" class="table table-striped table-bordered dt-responsive text-nowrap overflow-scroll">
+		<thead>
+			<tr>
+				<th>Malzeme Adı</th>
+				<th>Malzeme Türü</th>
+				<th>Malzeme SKT</th>
+				<th>Malzeme Adet</th>
+				<th>Malzeme Fiyat</th>
+				<th>Malzeme Kodu</th>
+				<th>Alım Tarihi</th>
+				<th>Ürün Durumu</th>
+				<th>Düzenleme</th>
+
+
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var malzeme in Model)
+			{
+					<tr>
+						<td>@malzeme.MalzemeAdı</td>
+						<td>@malzeme.MalzemeTürü</td>
+						<td>@malzeme.MalzemeSkt</td>
+						<td>@malzeme.MalzemeAdet</td>
+						<td>@malzeme.MalzemeFiyatı</td>
+						<td>@malzeme.MalzemeKodu</td>
+						<td>@malzeme.MalzemeAlınısTarih.ToString("dd-MM-yyyy")</td>
+						@if (malzeme.ÜrünDurumu == true)
+					{
+						<td>Kullanılabilir</td>
+					}
+					@if (malzeme.ÜrünDurumu == false)
+					{
+						<td>Kullanılıyor</td>
+					}
+						<td>
+							<a href="MalzemeDuzenleme/@malzeme.Id">Düzenle Veya Sil</a>
+						</td>
+					</tr>
+			}
+		</tbody>
+	</table>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
+<script>
+	new DataTable('#Malzeme');
+</script>

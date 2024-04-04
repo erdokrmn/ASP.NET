@@ -22,6 +22,150 @@ namespace BitirmeProjesi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BitirmeProjesi.Models.Gemi", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("GemiAdı")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GemiTipi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("GemiyeBaslamaTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TahminiBitirmeSuresi")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Gemiler");
+                });
+
+            modelBuilder.Entity("BitirmeProjesi.Models.GemiEnvanteri", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("GemiAdıId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ParcaAdı")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ParcaMiktarı")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Sfı")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Zone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GemiAdıId");
+
+                    b.ToTable("GemiEnvanterleri");
+                });
+
+            modelBuilder.Entity("BitirmeProjesi.Models.GemiSureci", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CalısanPersonellerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ParcaAdıId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("SürecTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CalısanPersonellerId");
+
+                    b.HasIndex("ParcaAdıId");
+
+                    b.ToTable("GemiSurecleri");
+                });
+
+            modelBuilder.Entity("BitirmeProjesi.Models.Malzeme", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("MalzemeAdet")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MalzemeAdı")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("MalzemeAlınısTarih")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MalzemeFiyatı")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MalzemeKodu")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MalzemeSkt")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MalzemeTürü")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("ÜrünDurumu")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Malzemeler");
+                });
+
+            modelBuilder.Entity("BitirmeProjesi.Models.Masraf", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("MasrafAdı")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("MasrafTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MasrafTipi")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MasrafTutarı")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Masraflar");
+                });
+
             modelBuilder.Entity("BitirmeProjesi.Models.Personel", b =>
                 {
                     b.Property<Guid>("Id")
@@ -97,156 +241,7 @@ namespace BitirmeProjesi.Migrations
                     b.ToTable("Personeller");
                 });
 
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Gemi", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("GemiAdı")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("GemiTipi")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("GemiyeBaslamaTarihi")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("TahminiBitirmeSuresi")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Gemiler");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.GemiEnvanteri", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("GemiAdıId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Location")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ParcaAdı")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ParcaMiktarı")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Sfı")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Zone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("GemiAdıId");
-
-                    b.ToTable("GemiEnvanterleri");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.GemiSureci", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CalısanPersonellerId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ParcaAdıId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("SürecTarihi")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CalısanPersonellerId");
-
-                    b.HasIndex("ParcaAdıId");
-
-                    b.ToTable("GemiSurecleri");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Malzeme", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("MalzemeAdet")
-                        .HasColumnType("int");
-
-                    b.Property<string>("MalzemeAdı")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("MalzemeAlınısTarih")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("MalzemeFiyatı")
-                        .HasColumnType("int");
-
-                    b.Property<string>("MalzemeKodu")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MalzemeSkt")
-                        .HasColumnType("int");
-
-                    b.Property<string>("MalzemeTürü")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("ÜrünDurumu")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Malzemeler");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Masraf", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("MasrafAdı")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MasrafTarihi")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MasrafTipi")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MasrafTutarı")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Masraflar");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Tevzi", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.Tevzi", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -274,37 +269,33 @@ namespace BitirmeProjesi.Migrations
                     b.ToTable("Tevziler");
                 });
 
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Zimmet", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.Zimmet", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("MalzemeSkt")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("MalzemeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PersonelId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("VerilmeTarihi")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("ZimmetEdilenKisiId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ZimmetEdilenMalzemeId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ZimmetEdilenKisiId");
+                    b.HasIndex("MalzemeId");
 
-                    b.HasIndex("ZimmetEdilenMalzemeId");
+                    b.HasIndex("PersonelId");
 
                     b.ToTable("Zimmetler");
                 });
 
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.GemiEnvanteri", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.GemiEnvanteri", b =>
                 {
-                    b.HasOne("BitirmeProjesiEkranlar.Models.Gemi", "GemiAdı")
+                    b.HasOne("BitirmeProjesi.Models.Gemi", "GemiAdı")
                         .WithMany("gemiEnvanterileri")
                         .HasForeignKey("GemiAdıId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -313,7 +304,7 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("GemiAdı");
                 });
 
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.GemiSureci", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.GemiSureci", b =>
                 {
                     b.HasOne("BitirmeProjesi.Models.Personel", "CalısanPersoneller")
                         .WithMany("GemiSürecleri")
@@ -321,7 +312,7 @@ namespace BitirmeProjesi.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BitirmeProjesiEkranlar.Models.GemiEnvanteri", "ParcaAdı")
+                    b.HasOne("BitirmeProjesi.Models.GemiEnvanteri", "ParcaAdı")
                         .WithMany("Parca")
                         .HasForeignKey("ParcaAdıId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -332,7 +323,7 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("ParcaAdı");
                 });
 
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Tevzi", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.Tevzi", b =>
                 {
                     b.HasOne("BitirmeProjesi.Models.Personel", "Personel")
                         .WithMany("Tevziler")
@@ -343,23 +334,38 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("Personel");
                 });
 
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Zimmet", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.Zimmet", b =>
                 {
-                    b.HasOne("BitirmeProjesi.Models.Personel", "ZimmetEdilenKisi")
-                        .WithMany("ZimmetEdilenPersoneller")
-                        .HasForeignKey("ZimmetEdilenKisiId")
+                    b.HasOne("BitirmeProjesi.Models.Malzeme", "ZimmetEdilenMalzeme")
+                        .WithMany("ZimmetEdilenMalzemeler")
+                        .HasForeignKey("MalzemeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BitirmeProjesiEkranlar.Models.Malzeme", "ZimmetEdilenMalzeme")
-                        .WithMany("ZimmetEdilenMalzemeler")
-                        .HasForeignKey("ZimmetEdilenMalzemeId")
+                    b.HasOne("BitirmeProjesi.Models.Personel", "ZimmetEdilenKisi")
+                        .WithMany("ZimmetEdilenPersoneller")
+                        .HasForeignKey("PersonelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("ZimmetEdilenKisi");
 
                     b.Navigation("ZimmetEdilenMalzeme");
+                });
+
+            modelBuilder.Entity("BitirmeProjesi.Models.Gemi", b =>
+                {
+                    b.Navigation("gemiEnvanterileri");
+                });
+
+            modelBuilder.Entity("BitirmeProjesi.Models.GemiEnvanteri", b =>
+                {
+                    b.Navigation("Parca");
+                });
+
+            modelBuilder.Entity("BitirmeProjesi.Models.Malzeme", b =>
+                {
+                    b.Navigation("ZimmetEdilenMalzemeler");
                 });
 
             modelBuilder.Entity("BitirmeProjesi.Models.Personel", b =>
@@ -369,21 +375,6 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("Tevziler");
 
                     b.Navigation("ZimmetEdilenPersoneller");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Gemi", b =>
-                {
-                    b.Navigation("gemiEnvanterileri");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.GemiEnvanteri", b =>
-                {
-                    b.Navigation("Parca");
-                });
-
-            modelBuilder.Entity("BitirmeProjesiEkranlar.Models.Malzeme", b =>
-                {
-                    b.Navigation("ZimmetEdilenMalzemeler");
                 });
 #pragma warning restore 612, 618
         }

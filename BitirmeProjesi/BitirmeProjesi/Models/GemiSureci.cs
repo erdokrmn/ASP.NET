@@ -1,7 +1,6 @@
-﻿using BitirmeProjesi.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace BitirmeProjesiEkranlar.Models
+namespace BitirmeProjesi.Models
 {
     public class GemiSureci
     {

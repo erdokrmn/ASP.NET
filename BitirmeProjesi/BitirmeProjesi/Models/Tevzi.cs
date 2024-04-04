@@ -1,12 +1,17 @@
-﻿using BitirmeProjesi.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BitirmeProjesiEkranlar.Models
+namespace BitirmeProjesi.Models
 {
     public class Tevzi
     {
         public Guid Id { get; set; }
+       
+
         [Required]
+        [ForeignKey("Personel")]
+        public Guid PersonelId { get; set; }
+		[Required]
         public DateTime TevziTarih { get; set; }
         [Required]
         public int CalısmaSaati { get; set; }
@@ -15,6 +20,6 @@ namespace BitirmeProjesiEkranlar.Models
         [Required]
         public bool Durum { get; set; }
         [Required]
-        public Personel Personel { get; set; }
+        public virtual Personel Personel { get; set; }
     }
 }

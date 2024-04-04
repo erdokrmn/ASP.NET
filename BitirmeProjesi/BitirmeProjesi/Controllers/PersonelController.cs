@@ -1,7 +1,6 @@
 ﻿using BitirmeProjesi.DataContext;
 using BitirmeProjesi.Models;
 using BitirmeProjesi.Models.ViewModel;
-using BitirmeProjesiEkranlar.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

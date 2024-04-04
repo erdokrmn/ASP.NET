@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BitirmeProjesiEkranlar.Models
+namespace BitirmeProjesi.Models
 {
     public class GemiEnvanteri
     {

@@ -1,0 +1,25 @@
+﻿@model BitirmeProjesi.Models.Masraf
+
+
+<form method="post" action="MasrafKayıt" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Masraf Adı</label>
+        <input type="text" class="form-control" asp-for="MasrafAdı">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Malzeme Türü</label>
+        <input type="text" class="form-control" asp-for="MasrafTipi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Masraf Tutarı</label>
+        <input type="text" class="form-control" asp-for="MasrafTutarı">
+    </div>
+    
+    <div class="mb-3">
+        <label for="" class="form-label">Masraf Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="MasrafTarihi">
+    </div>
+   
+
+    <button type="submit" class="btn btn-primary">Kayıt Et</button>
+</form>

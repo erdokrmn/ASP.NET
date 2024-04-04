@@ -1,5 +1,4 @@
-﻿using BitirmeProjesiEkranlar.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 
 namespace BitirmeProjesi.Models
@@ -45,8 +44,8 @@ namespace BitirmeProjesi.Models
 		public bool CalısmaDurumu { get; set; }
 
 
-		public ICollection<Tevzi> Tevziler { get; set; }
-		public ICollection<GemiSureci> GemiSürecleri { get; set; }
-		public ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
+		public virtual ICollection<Tevzi> Tevziler { get; set; }
+		public virtual ICollection<GemiSureci> GemiSürecleri { get; set; }
+		public virtual ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
 	}
 }

@@ -1,7 +1,7 @@
-﻿using BitirmeProjesi.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BitirmeProjesiEkranlar.Models
+namespace BitirmeProjesi.Models
 {
     public class Zimmet
     {
@@ -9,10 +9,16 @@ namespace BitirmeProjesiEkranlar.Models
 
         [Required]
         public DateTime VerilmeTarihi { get; set; }
-        public string MalzemeSkt { get; set; }
         [Required]
-        public Personel ZimmetEdilenKisi { get; set; }
+        [ForeignKey("Personel")]
+        public Guid PersonelId { get; set; }
+		[Required]
+		[ForeignKey("Malzeme")]
+		public Guid MalzemeId { get; set; }
+
+		[Required]
+        virtual public Personel ZimmetEdilenKisi { get; set; }
         [Required]
-        public Malzeme ZimmetEdilenMalzeme { get; set; }
+        virtual public Malzeme ZimmetEdilenMalzeme { get; set; }
     }
 }

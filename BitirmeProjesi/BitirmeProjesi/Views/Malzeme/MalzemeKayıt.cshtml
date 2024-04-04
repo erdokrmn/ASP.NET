@@ -1,0 +1,39 @@
+﻿@model BitirmeProjesi.Models.Malzeme
+
+
+<form method="post" action="MalzemeKayıt" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Malzeme Adı</label>
+        <input type="text" class="form-control" asp-for="MalzemeAdı">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Malzeme Türü</label>
+        <input type="text" class="form-control" asp-for="MalzemeTürü">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Skt</label>
+        <input type="text" class="form-control" asp-for="MalzemeSkt">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Adet</label>
+        <input type="number" class="form-control" asp-for="MalzemeAdet">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Fiyat</label>
+        <input type="number" class="form-control" asp-for="MalzemeFiyatı">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Malzeme Kodu</label>
+        <input type="string" class="form-control" asp-for="MalzemeKodu">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Alınış Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="MalzemeAlınısTarih">
+    </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Ürün Durumu</label>
+        <input type="checkbox" class="form-inline" asp-for="ÜrünDurumu">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kayıt Et</button>
+</form>

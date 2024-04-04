@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
-namespace BitirmeProjesiEkranlar.Models
+namespace BitirmeProjesi.Models
 {
     public class Gemi
     {
