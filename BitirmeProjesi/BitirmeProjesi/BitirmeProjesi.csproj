@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EPPlus" Version="7.1.0" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="jQuery" Version="3.7.1" />
     <PackageReference Include="jquery.datatables" Version="1.10.15" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.0" />
@@ -20,8 +22,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.Data.OleDb" Version="8.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.10" />
+    <PackageReference Include="System.Security.Permissions" Version="5.0.0" />
   </ItemGroup>
 
 </Project>

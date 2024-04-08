@@ -1,12 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BitirmeProjesi.Models
 {
     public class GemiEnvanteri
     {
         public Guid Id { get; set; }
-        [Required]
-        public string Sfı { get; set; }
+
+		[Required]
+		[ForeignKey("Gemi")]
+		public Guid GemiId { get; set; }
         [Required]
         public string ParcaAdı { get; set; }
         [Required]

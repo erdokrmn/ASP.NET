@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/GemiEnvanteri/GemiEnvanteriKayıt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaUVudmFudGVyaVxHZW1pRW52YW50ZXJpS2F5xLF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/GemiEnvanteri/GemiEnvanteriListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaUVudmFudGVyaVxHZW1pRW52YW50ZXJpTGlzdGVsZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Gemi/GemiDuzenleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaVxHZW1pRHV6ZW5sZW1lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +94,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Tevzi/TevziListeleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV2emlcVGV2emlMaXN0ZWxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Zimmet/ZimmetKayıt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmltbWV0XFppbW1ldEthecSxdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Zimmet/ZimmetListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmltbWV0XFppbW1ldExpc3RlbGVtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/_ViewImports.cshtml]

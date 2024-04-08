@@ -64,5 +64,20 @@ namespace BitirmeProjesi.Controllers
 
 		}
 
+		[HttpPost]
+		public async Task<IActionResult> Delete(Guid Id)
+		{
+			//silme kısmı
+			var tevzi = DbContext.Tevziler.Find(Id);
+			if (tevzi != null)
+			{
+				DbContext.Tevziler.Remove(tevzi);
+				await DbContext.SaveChangesAsync();
+				return RedirectToAction("TevziListeleme");
+			}
+
+			return RedirectToAction("TevziListeleme");
+		}
+
 	}
 }

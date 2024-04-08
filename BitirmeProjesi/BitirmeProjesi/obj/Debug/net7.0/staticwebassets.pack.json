@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BitirmeProjesi.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\Uploads\\file",
+      "PackagePath": "staticwebassets\\Uploads"
+    },
+    {
       "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

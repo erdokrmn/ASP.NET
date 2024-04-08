@@ -13,7 +13,7 @@
 				<th>Mesai Saati </th>
 				<th>Çalıştığı Tarih</th>
 				<th>Durum</th>
-				<th>Düzenleme</th>
+				<th>Silme</th>
 
 
 			</tr>
@@ -35,10 +35,16 @@
 						{
 							<td>İşe Gelinmemiş</td>
 						}
-
+						<form method="post" action="Delete" class="mt-5">
 						<td>
-							<a href="TevziDuzenleme/@tevzi.Id">Düzenle Veya Sil</a>
+						
+						<input type="hidden" class="form-control" asp-for="(@tevzi.Id)" name="Id" readonly>
+						<button type="submit" class="btn btn-primary">
+							Sil
+						</button>
+						
 						</td>
+						</form>
 					</tr>
 			}
 		</tbody>

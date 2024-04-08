@@ -1,0 +1,26 @@
+﻿@model BitirmeProjesi.Models.ViewModel.ZimmetViewModel
+
+
+
+<form method="post" action="ZimmetKayıt" class="mt-5">
+
+    <div class="mb-3">
+        <label>Malzeme Adı</label>
+        @Html.DropDownListFor(m=>m.malzemeler.Id,(List<SelectListItem>)ViewBag.Malzemeler ,new {@class= "form-control"})
+
+    </div>
+
+    <div class="mb-3">
+        <label>Personel Adı</label>
+        @Html.DropDownListFor(m=>m.personeller.Id,(List<SelectListItem>)ViewBag.Personeller ,new {@class= "form-control"})
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Verilme Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="zimmet.VerilmeTarihi">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kayıt Et</button>
+
+
+</form>

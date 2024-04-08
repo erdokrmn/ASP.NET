@@ -53,7 +53,7 @@ namespace BitirmeProjesi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("GemiAdıId")
+                    b.Property<Guid>("GemiId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Location")
@@ -67,17 +67,13 @@ namespace BitirmeProjesi.Migrations
                     b.Property<int>("ParcaMiktarı")
                         .HasColumnType("int");
 
-                    b.Property<string>("Sfı")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Zone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GemiAdıId");
+                    b.HasIndex("GemiId");
 
                     b.ToTable("GemiEnvanterleri");
                 });
@@ -297,7 +293,7 @@ namespace BitirmeProjesi.Migrations
                 {
                     b.HasOne("BitirmeProjesi.Models.Gemi", "GemiAdı")
                         .WithMany("gemiEnvanterileri")
-                        .HasForeignKey("GemiAdıId")
+                        .HasForeignKey("GemiId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

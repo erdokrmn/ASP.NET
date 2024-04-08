@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D85ckWZOyQ0Hf3IIgfs/IRcXR0RWI9VPFYJM/2Ca1aI=",
+  "Hash": "ET0+SFkTfjrG0ev6t5d8TFCTPWi5lr36uZ1Alu+AE48=",
   "Source": "BitirmeProjesi",
   "BasePath": "_content/BitirmeProjesi",
   "Mode": "Default",
@@ -1817,6 +1817,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\Uploads\\file",
+      "SourceId": "BitirmeProjesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\",
+      "BasePath": "_content/BitirmeProjesi",
+      "RelativePath": "Uploads/file",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\file"
     }
   ]
 }

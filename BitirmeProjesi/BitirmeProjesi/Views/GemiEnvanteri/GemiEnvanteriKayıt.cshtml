@@ -1,0 +1,21 @@
+﻿@model BitirmeProjesi.Models.ViewModel.GemiEnvanteriViewModel
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadFile">
+    <div class="mb-3">
+        <label>Excel Dosyasını Seçiniz.</label>
+        <input type="file" name="file" />
+    </div>
+   
+   
+
+    <div class="mb-3">
+        <label>Gemi Adı</label>
+        @Html.DropDownListFor(m=>m.gemiler.Id,(List<SelectListItem>)ViewBag.Gemiler ,new {@class= "form-control"})
+    </div>
+    <div>
+        <
+        <button type="submit">Upload</button>
+    </div>
+
+     
+</form>
