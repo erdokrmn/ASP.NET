@@ -12,6 +12,8 @@ namespace BitirmeProjesi.Models.ViewModel
         public string TcNo { get; set; }
         [Required]
         public string TelefonNo { get; set; }
+        public string Yetki { get; set; }
+        public int Maas { get; set; }
         [Required]
         public string KanGrubu { get; set; }
         [Required]

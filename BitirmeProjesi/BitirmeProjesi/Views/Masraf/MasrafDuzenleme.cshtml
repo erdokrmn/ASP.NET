@@ -20,8 +20,17 @@
     </div>
 
     <div class="mb-3">
-        <label for="" class="form-label">Masraf Tarihi</label>
-        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="MasrafTarihi">
+        <label for="" class="form-label">Ödeme Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="ÖdemeTarihi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ödenen Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="ÖdenenTarih">
+    </div>
+
+    <div class="mb-3">
+        <label>Firma Adı</label>
+        @Html.DropDownListFor(m => m.FirmaId, (List<SelectListItem>)ViewBag.Firmalar, new { @class = "form-control" })
     </div>
 
 

@@ -1,4 +1,12 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿import FingerprintJS from '@fingerprintjs/fingerprintjs-pro'
 
-// Write your JavaScript code.
+// Initialize the agent on application start.
+const fpPromise = FingerprintJS.load({
+    apiKey: "nHMKRbO5hvOmsHBF27li",
+    region: "eu"
+})
+
+// Get the visitorId when you need it.
+fpPromise
+    .then(fp => fp.get())
+    .then(result => console.log(result.visitorId))

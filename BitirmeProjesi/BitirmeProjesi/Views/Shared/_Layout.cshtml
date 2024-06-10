@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BitirmeProjesi</a>
+               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,18 +22,146 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Personel" asp-action="PersonelKayıt">Personel İşlemleri</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Gemi" asp-action="GemiListeleme">Gemi Listeleme</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Gemi" asp-action="GemiKayıt">Gemi Kayıt</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="GemiEnvanteri" asp-action="GemiEnvanteriKayıt">Masraf Listeleme</a>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                                   Personel İşlemler
+                                </a>
+                                <div class="dropdown-menu">
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <a class="dropdown-item" asp-area="" asp-controller="Personel" asp-action="PersonelKayıt">Personel Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Personel" asp-action="PersonelListeleme">Personel Listeleme</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Tevzi" asp-action="TevziKayıt">Tevzi Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Tevzi" asp-action="TevziListeleme">Tevzi Listeleme</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Register">Hesap Açma</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="TcpServer" asp-action="TcpServerData">Tcp</a>
+
+                                    }
+                                    else if (User.IsInRole("AdminYardimcisi"))
+                                    {
+                                    <!-- AdminYardimcisi için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki1"))
+                                    {
+                                    <!-- Yetki1 için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki2"))
+                                    {
+                                    <!-- Yetki2 için görünecek öğeler -->
+                                    }
+                                </div>
+                            </li>
+                        }
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                                   Finansal İşlemler
+                                </a>
+                                <div class="dropdown-menu">
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <a class="dropdown-item" asp-area="" asp-controller="Firma" asp-action="FirmaKayıt">Firma Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Firma" asp-action="FirmaListeleme">Firma Listeleme</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Masraf" asp-action="MasrafKayıt">Masraf Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Masraf" asp-action="MasrafListeleme">Masraf Listeleme</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Gelir" asp-action="GelirKayıt">Gelir Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Gelir" asp-action="GelirListeleme">Gelir Listeleme</a>
+                                    }
+                                    else if (User.IsInRole("AdminYardimcisi"))
+                                    {
+                                        <!-- AdminYardimcisi için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki1"))
+                                    {
+                                        <!-- Yetki1 için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki2"))
+                                    {
+                                        <!-- Yetki2 için görünecek öğeler -->
+                                    }
+                                </div>
+                            </li>
+                        }
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                                    Malzeme İşlemler
+                                </a>
+                                <div class="dropdown-menu">
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <a class="dropdown-item" asp-area="" asp-controller="Malzeme" asp-action="MalzemeKayıt">Malzeme Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Malzeme" asp-action="MalzemeListeleme">Malzeme Listeleme</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Zimmet" asp-action="ZimmetKayıt">Zimmet Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Zimmet" asp-action="ZimmetListeleme">Zimmet Listeleme</a>
+
+                                    }
+                                    else if (User.IsInRole("AdminYardimcisi"))
+                                    {
+                                        <!-- AdminYardimcisi için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki1"))
+                                    {
+                                        <!-- Yetki1 için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki2"))
+                                    {
+                                        <!-- Yetki2 için görünecek öğeler -->
+                                    }
+                                </div>
+                            </li>
+                        }
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                                    Malzeme İşlemler
+                                </a>
+                                <div class="dropdown-menu">
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <a class="dropdown-item" asp-area="" asp-controller="Gemi" asp-action="GemiKayıt">Gemi Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Gemi" asp-action="GemiListeleme">Gemi Listeleme</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="GemiEnvanteri" asp-action="GemiEnvanteriKayıt">Gemi Envanteri Kayıt</a>
+                                        <a class="dropdown-item" asp-area="" asp-controller="GemiEnvanteri" asp-action="GemiEnvanteriListeleme">Gemi Envanteri Listeleme</a>
+
+                                    }
+                                    else if (User.IsInRole("AdminYardimcisi"))
+                                    {
+                                        <!-- AdminYardimcisi için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki1"))
+                                    {
+                                        <!-- Yetki1 için görünecek öğeler -->
+                                    }
+                                    else if (User.IsInRole("Yetki2"))
+                                    {
+                                        <!-- Yetki2 için görünecek öğeler -->
+                                    }
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <form asp-controller="Account" asp-action="Logout" method="post" class="form-inline">
+                                    <button type="submit" class="btn btn-link nav-link text-dark">Logout</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

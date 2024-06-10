@@ -34,7 +34,10 @@ namespace BitirmeProjesi.Models
 		[Required]
 		public string AcilDurumdaUlaşılacakKişiNo { get; set; }
 
-		[Required]
+		public string Yetki {  get; set; }
+        public int Maas { get; set; }
+
+        [Required]
 		public DateTime IseBaslamaTarihi { get; set; }
 
 		[AllowNull]
@@ -47,5 +50,6 @@ namespace BitirmeProjesi.Models
 		public virtual ICollection<Tevzi> Tevziler { get; set; }
 		public virtual ICollection<GemiSureci> GemiSürecleri { get; set; }
 		public virtual ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
-	}
+        public virtual ICollection<FingerPrintData> FingerPrintDatas { get; set; }
+    }
 }

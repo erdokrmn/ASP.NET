@@ -1,4 +1,4 @@
-﻿@model List<BitirmeProjesi.Models.Masraf>
+﻿@model BitirmeProjesi.Models.ViewModel.MasrafListelemeViewModel
 
 @{
 
@@ -13,21 +13,24 @@
 				<th>Masraf Adı</th>
 				<th>Masraf Türü</th>
 				<th>Masraf Tutarı </th>
-				<th>Masraf Tarihi</th>
+				<th>Ödeme Tarihi</th>
+				<th>Ödenen Tarih</th>
+				<th>Firma Adı</th>
 				<th>Düzenleme</th>
 
 
 			</tr>
 		</thead>
 		<tbody>
-			@foreach (var masraf in Model)
+			@foreach (var masraf in Model.MasrafFirma)
 			{
 				<tr>
 					<td>@masraf.MasrafAdı</td>
 					<td>@masraf.MasrafTipi</td>
 					<td>@masraf.MasrafTutarı</td>
-					<td>@masraf.MasrafTarihi.ToString("dd-MM-yyyy")</td>
-					
+					<td>@masraf.ÖdemeTarihi.ToString("dd-MM-yyyy")</td>
+					<td>@masraf.ÖdenenTarih</td>
+					<td>@masraf.Firma.FirmaAdı</td>
 					<td>
 						<a href="MasrafDuzenleme/@masraf.Id">Düzenle Veya Sil</a>
 					</td>

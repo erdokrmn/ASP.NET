@@ -1,9 +1,10 @@
 ﻿using BitirmeProjesi.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace BitirmeProjesi.DataContext
 {
-    public class BitirmeProjesiDbContext : DbContext
+    public class BitirmeProjesiDbContext  : DbContext
     {
         public BitirmeProjesiDbContext(DbContextOptions options) : base(options)
         {
@@ -16,8 +17,12 @@ namespace BitirmeProjesi.DataContext
         public DbSet<Personel> Personeller { get; set; }
         public DbSet<Tevzi> Tevziler { get; set; }
         public DbSet<Zimmet> Zimmetler { get; set; }
+		public DbSet<Firma> Firmalar { get; set; }
+		public DbSet<Gelir> Gelirler { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<FingerPrintData> FingerPrintDatas { get; set; }
 
     }
-   
-   
+
+
 }

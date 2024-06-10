@@ -3,6 +3,7 @@ using BitirmeProjesi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BitirmeProjesi.DataContext;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -16,29 +17,47 @@ namespace BitirmeProjesi.Controllers
 		}
 		public IActionResult MasrafKayıt()
 		{
-			return View();
+            List<SelectListItem> firmalar = (from x in DbContext.Firmalar.ToList()
+                                             select new SelectListItem
+                                             {
+                                                 Text = x.FirmaAdı,
+                                                 Value = x.Id.ToString()
+                                             }).ToList();
+            ViewBag.Firmalar = firmalar;
+            return View();
 		}
 		[HttpGet]
 		public async Task<IActionResult> MasrafListeleme()
 		{
+			MasrafListelemeViewModel model = new MasrafListelemeViewModel();
+			model.MasrafFirma = DbContext.Masraflar.Include(b => b.Firma).ToList();
 			var masraflar = await DbContext.Masraflar.ToListAsync();
 
-			return View(masraflar);
+			return View(model);
 
 
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> MasrafKayıt(Masraf addMasrafRequest)
+		public async Task<IActionResult> MasrafKayıt(MasrafViewModel addMasrafRequest)
 		{
+			var SelectedFirmaId = addMasrafRequest.firmalar.Id;
+			// alttaki ile kontrol yapıcam ileride
+			var Selectedmalzeme = DbContext.Malzemeler.Find(SelectedFirmaId);
+
 			//Kayıt kısmı
 			var masraf = new Masraf()
 			{
 				Id = Guid.NewGuid(),
-				MasrafAdı = addMasrafRequest.MasrafAdı,
-				MasrafTipi = addMasrafRequest.MasrafTipi,
-				MasrafTutarı = addMasrafRequest.MasrafTutarı,
-				MasrafTarihi = addMasrafRequest.MasrafTarihi,
+				MasrafAdı = addMasrafRequest.masraflar.MasrafAdı,
+				MasrafTipi = addMasrafRequest.masraflar.MasrafTipi,
+				MasrafTutarı = addMasrafRequest.masraflar.MasrafTutarı,
+				ÖdemeTarihi = addMasrafRequest.masraflar.ÖdemeTarihi,
+				ÖdenenTarih = addMasrafRequest.masraflar.ÖdenenTarih,
+				FirmaId= SelectedFirmaId,
+
+
+
 
 			};
 			await DbContext.Masraflar.AddAsync(masraf);
@@ -50,8 +69,15 @@ namespace BitirmeProjesi.Controllers
 		[HttpGet]
 		public async Task<IActionResult> MasrafDuzenleme(Guid id)
 		{
-			//Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
-			var masraf = await DbContext.Masraflar.FirstOrDefaultAsync(x => x.Id == id);
+            List<SelectListItem> firmalar = (from x in DbContext.Firmalar.ToList()
+                                             select new SelectListItem
+                                             {
+                                                 Text = x.FirmaAdı,
+                                                 Value = x.Id.ToString()
+                                             }).ToList();
+            ViewBag.Firmalar = firmalar;
+            //Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
+            var masraf = await DbContext.Masraflar.FirstOrDefaultAsync(x => x.Id == id);
 			if (masraf != null)
 			{
 				var viewModel = new Masraf()
@@ -60,7 +86,9 @@ namespace BitirmeProjesi.Controllers
 					MasrafAdı = masraf.MasrafAdı,
 					MasrafTipi = masraf.MasrafTipi,
 					MasrafTutarı = masraf.MasrafTutarı,
-					MasrafTarihi = masraf.MasrafTarihi,
+					ÖdemeTarihi = masraf.ÖdemeTarihi,
+					ÖdenenTarih = masraf.ÖdenenTarih,
+					FirmaId = masraf.FirmaId,
 
 				};
 				return await Task.Run(() => View("MasrafDuzenleme", viewModel));
@@ -85,6 +113,8 @@ namespace BitirmeProjesi.Controllers
 		[HttpPost]
 		public async Task<IActionResult> MasrafDuzenleme(Masraf updateMasrafViewModel)
 		{
+			var SelectedFirmaId = updateMasrafViewModel.FirmaId;
+
 			//Düzenleme yapılan kısım
 			var masraf = DbContext.Masraflar.Find(updateMasrafViewModel.Id);
 			if (masraf != null)
@@ -92,7 +122,9 @@ namespace BitirmeProjesi.Controllers
 				masraf.MasrafAdı = updateMasrafViewModel.MasrafAdı;
 				masraf.MasrafTipi = updateMasrafViewModel.MasrafTipi;
 				masraf.MasrafTutarı = updateMasrafViewModel.MasrafTutarı;
-				masraf.MasrafTarihi = updateMasrafViewModel.MasrafTarihi;
+				masraf.ÖdemeTarihi = masraf.ÖdemeTarihi;
+				masraf.ÖdenenTarih = masraf.ÖdenenTarih;
+				masraf.FirmaId = SelectedFirmaId;
 
 
 				await DbContext.SaveChangesAsync();

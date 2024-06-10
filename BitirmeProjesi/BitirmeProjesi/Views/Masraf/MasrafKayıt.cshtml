@@ -1,23 +1,31 @@
-﻿@model BitirmeProjesi.Models.Masraf
+﻿@model BitirmeProjesi.Models.ViewModel.MasrafViewModel
 
 
 <form method="post" action="MasrafKayıt" class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Masraf Adı</label>
-        <input type="text" class="form-control" asp-for="MasrafAdı">
+        <input type="text" class="form-control" asp-for="masraflar.MasrafAdı">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Türü</label>
-        <input type="text" class="form-control" asp-for="MasrafTipi">
+        <input type="text" class="form-control" asp-for="masraflar.MasrafTipi">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Masraf Tutarı</label>
-        <input type="text" class="form-control" asp-for="MasrafTutarı">
+        <input type="number" class="form-control" asp-for="masraflar.MasrafTutarı">
     </div>
     
     <div class="mb-3">
-        <label for="" class="form-label">Masraf Tarihi</label>
-        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="MasrafTarihi">
+        <label for="" class="form-label">Ödeme Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="masraflar.ÖdemeTarihi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ödenen Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="masraflar.ÖdenenTarih">
+    </div>
+    <div class="mb-3">
+        <label>Firma Adı</label>
+        @Html.DropDownListFor(m => m.firmalar.Id, (List<SelectListItem>)ViewBag.Firmalar, new { @class = "form-control" })
     </div>
    
 

@@ -1,0 +1,33 @@
+﻿@model BitirmeProjesi.Models.Firma
+
+
+<form method="post" action="FirmaDuzenleme" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Firma Adı</label>
+        <input type="text" class="form-control" asp-for="FirmaAdı">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Telefon No</label>
+        <input type="tel" class="form-control" asp-for="TelofonNo">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Iban</label>
+        <input type="text" class="form-control" asp-for="Iban">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">İlgili Kişi</label>
+        <input type="text"  class="form-control" asp-for="İlgiliKisi">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Düzenle</button>
+    <button type="submit" class="btn btn-danger"
+            asp-action="Delete"
+            asp-controller="Gemi">
+        Sil
+    </button>
+</form>

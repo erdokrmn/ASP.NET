@@ -31,7 +31,9 @@ namespace BitirmeProjesi.Controllers
                 Soyad = addPersonelRequest.Soyad,
                 TcNo = addPersonelRequest.TcNo,
                 TelefonNo = addPersonelRequest.TelefonNo,
-                KanGrubu = addPersonelRequest.KanGrubu,
+				Maas = addPersonelRequest.Maas,
+				Yetki = addPersonelRequest.Yetki,
+				KanGrubu = addPersonelRequest.KanGrubu,
                 DoğumYeri = addPersonelRequest.DoğumYeri,
                 Il = addPersonelRequest.Il,
                 Ilce = addPersonelRequest.Ilce,
@@ -75,6 +77,8 @@ namespace BitirmeProjesi.Controllers
 					Soyad = personel.Soyad,
 					TcNo = personel.TcNo,
 					TelefonNo = personel.TelefonNo,
+					Maas = personel.Maas,
+					Yetki = personel.Yetki,
 					KanGrubu = personel.KanGrubu,
 					DoğumYeri = personel.DoğumYeri,
 					Il = personel.Il,
@@ -121,7 +125,9 @@ namespace BitirmeProjesi.Controllers
                 personel.Soyad = updatePersonelViewModel.Soyad;
                 personel.TcNo = updatePersonelViewModel.TcNo;
                 personel.TelefonNo = updatePersonelViewModel.TelefonNo;
-                personel.KanGrubu = updatePersonelViewModel.KanGrubu; 
+				personel.Maas = updatePersonelViewModel.Maas;
+				personel.Yetki = updatePersonelViewModel.Yetki;
+				personel.KanGrubu = updatePersonelViewModel.KanGrubu; 
                 personel.DoğumYeri = updatePersonelViewModel.DoğumYeri;
 				personel.Il = updatePersonelViewModel.Il;
 				personel.Ilce = updatePersonelViewModel.Ilce;

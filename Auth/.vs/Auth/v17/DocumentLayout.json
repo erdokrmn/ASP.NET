@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Auth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A34D95A2-D427-463B-8A54-1F89EB49E98E}|Auth\\Auth.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\auth\\auth\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A34D95A2-D427-463B-8A54-1F89EB49E98E}|Auth\\Auth.csproj|solutionrelative:auth\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Auth\\Auth\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "Auth\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\Auth\\Auth\\Models\\Person.cs",
+              "RelativeToolTip": "Auth\\Models\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T15:05:45.011Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

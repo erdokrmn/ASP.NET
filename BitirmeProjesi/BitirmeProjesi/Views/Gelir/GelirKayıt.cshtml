@@ -1,0 +1,30 @@
+﻿@model BitirmeProjesi.Models.Gelir
+
+
+<form method="post" action="GelirKayıt" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Fatura Kesilen Şahıs</label>
+        <input type="text" class="form-control" asp-for="FaturaKesilenAd">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Miktar</label>
+        <input type="text" class="form-control" asp-for="Miktar">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Kesinti</label>
+        <input type="text" class="form-control" asp-for="Kesinti">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Fatura Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="FaturaTarihi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ödenme Tarihi</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="ÖdenmeTarihi">
+    </div>
+ 
+
+
+    <button type="submit" class="btn btn-primary">Kayıt Et</button>
+</form>

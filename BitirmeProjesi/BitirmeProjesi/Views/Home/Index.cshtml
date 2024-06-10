@@ -4,5 +4,31 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Your application description page.</p>
 </div>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>Welcome, @User.Identity.Name!</h2>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <p>Admin Content</p>
+    }
+    else if (User.IsInRole("AdminYardimcisi"))
+    {
+        <p>Admin Yardımcısı Content</p>
+    }
+    else if (User.IsInRole("Yetki1"))
+    {
+        <p>Yetki1 Content</p>
+    }
+    else if (User.IsInRole("Yetki2"))
+    {
+        <p>Yetki2 Content</p>
+    }
+}
+else
+{
+    <p>Please log in to see the content.</p>
+}

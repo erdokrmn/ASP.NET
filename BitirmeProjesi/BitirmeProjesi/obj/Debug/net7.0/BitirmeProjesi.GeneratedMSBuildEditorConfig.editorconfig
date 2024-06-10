@@ -10,11 +10,45 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BitirmeProjesi
 build_property.RootNamespace = BitirmeProjesi
 build_property.ProjectDir = C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Firma/FirmaDuzenleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcRmlybWFEdXplbmxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Firma/FirmaKayıt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcRmlybWFLYXnEsXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Firma/FirmaListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcRmlybWFMaXN0ZWxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Gelir/GelirDuzenleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VsaXJcR2VsaXJEdXplbmxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Gelir/GelirKayıt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VsaXJcR2VsaXJLYXnEsXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Gelir/GelirListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VsaXJcR2VsaXJMaXN0ZWxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/GemiEnvanteri/GemiEnvanteriKayıt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaUVudmFudGVyaVxHZW1pRW52YW50ZXJpS2F5xLF0LmNzaHRtbA==
@@ -68,6 +102,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzcmFmXE1hc3JhZkxpc3RlbGVtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Parmak/main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFybWFrXG1haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Parmak/Parmak.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFybWFrXFBhcm1hay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Personel/PersonelDuzenleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcUGVyc29uZWxEdXplbmxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +128,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/TcpServer/TcpServerData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGNwU2VydmVyXFRjcFNlcnZlckRhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Tevzi/TevziKayıt.cshtml]
