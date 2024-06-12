@@ -41,7 +41,7 @@ namespace BitirmeProjesi.Controllers
                 Cinsiyet = addPersonelRequest.Cinsiyet,
                 DoğumYılı = addPersonelRequest.DoğumYılı,
                 EDevletŞifre = addPersonelRequest.EDevletŞifre,
-                EMail = addPersonelRequest.EMail,
+                CalıstıgıTershane = addPersonelRequest.CalıstıgıTershane,
                 AcilDurumdaUlaşılacakKişiNo = addPersonelRequest.AcilDurumdaUlaşılacakKişiNo,
                 IseBaslamaTarihi = addPersonelRequest.IseBaslamaTarihi,
                 IstenAyrılmaTarihi = addPersonelRequest.IstenAyrılmaTarihi,
@@ -87,7 +87,7 @@ namespace BitirmeProjesi.Controllers
 					Cinsiyet = personel.Cinsiyet,
 					DoğumYılı = personel.DoğumYılı,
 					EDevletŞifre = personel.EDevletŞifre,
-					EMail = personel.EMail,
+                    CalıstıgıTershane = personel.CalıstıgıTershane,
 					AcilDurumdaUlaşılacakKişiNo = personel.AcilDurumdaUlaşılacakKişiNo,
 					IseBaslamaTarihi = personel.IseBaslamaTarihi,
 					IstenAyrılmaTarihi = personel.IstenAyrılmaTarihi,
@@ -135,7 +135,7 @@ namespace BitirmeProjesi.Controllers
 				personel.Cinsiyet = updatePersonelViewModel.Cinsiyet;
 				personel.DoğumYılı = updatePersonelViewModel.DoğumYılı;
 				personel.EDevletŞifre = updatePersonelViewModel.EDevletŞifre;
-				personel.EMail = updatePersonelViewModel.EMail;
+				personel.CalıstıgıTershane = updatePersonelViewModel.CalıstıgıTershane;
 				personel.AcilDurumdaUlaşılacakKişiNo = updatePersonelViewModel.AcilDurumdaUlaşılacakKişiNo;
 				personel.IseBaslamaTarihi = updatePersonelViewModel.IseBaslamaTarihi;
 				personel.IstenAyrılmaTarihi = updatePersonelViewModel.IstenAyrılmaTarihi;

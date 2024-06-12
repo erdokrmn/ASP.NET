@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcRmlybWFMaXN0ZWxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/GC/GCKayıt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0NcR0NLYXnEsXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Gelir/GelirDuzenleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VsaXJcR2VsaXJEdXplbmxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Maas/Puantaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1xQdWFudGFqLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Malzeme/MalzemeDuzenleme.cshtml]

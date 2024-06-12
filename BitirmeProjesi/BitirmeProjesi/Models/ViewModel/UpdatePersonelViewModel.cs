@@ -26,7 +26,7 @@ namespace BitirmeProjesi.Models.ViewModel
         public string Adres { get; set; }
         [Required]
         public bool Cinsiyet { get; set; }
-        public string EMail { get; set; }
+        public string CalıstıgıTershane { get; set; }
         [Required]
         public string DoğumYılı { get; set; }
         [Required]

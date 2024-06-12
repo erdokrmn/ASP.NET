@@ -123,7 +123,7 @@ namespace BitirmeProjesi.Controllers
 				masraf.MasrafTipi = updateMasrafViewModel.MasrafTipi;
 				masraf.MasrafTutarı = updateMasrafViewModel.MasrafTutarı;
 				masraf.ÖdemeTarihi = masraf.ÖdemeTarihi;
-				masraf.ÖdenenTarih = masraf.ÖdenenTarih;
+				masraf.ÖdenenTarih = updateMasrafViewModel.ÖdenenTarih;
 				masraf.FirmaId = SelectedFirmaId;
 
 

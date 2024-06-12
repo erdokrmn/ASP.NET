@@ -1,0 +1,36 @@
+﻿@model List<BitirmeProjesi.Models.ViewModel.PuantajViewModel>
+
+<h1>Çalışma Saatleri</h1>
+
+<form method="post">
+    <label for="baslangicTarihi">Başlangıç Tarihi:</label>
+    <input type="date" id="baslangicTarihi" name="baslangicTarihi" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+    <button type="submit">Göster</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Kişi İsmi</th>
+            <th>1. Hafta</th>
+            <th>2. Hafta</th>
+            <th>3. Hafta</th>
+            <th>4. Hafta</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.AdSoyad</td>
+                    <td>@item.Hafta1</td>
+                    <td>@item.Hafta2</td>
+                    <td>@item.Hafta3</td>
+                    <td>@item.Hafta4</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

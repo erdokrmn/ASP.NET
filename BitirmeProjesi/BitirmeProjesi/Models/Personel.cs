@@ -30,7 +30,7 @@ namespace BitirmeProjesi.Models
 		public string DoğumYılı { get; set; }
 		[Required]
 		public string EDevletŞifre { get; set; }
-		public string EMail { get; set; }
+		public string CalıstıgıTershane { get; set; }
 		[Required]
 		public string AcilDurumdaUlaşılacakKişiNo { get; set; }
 
@@ -48,7 +48,8 @@ namespace BitirmeProjesi.Models
 
 
 		public virtual ICollection<Tevzi> Tevziler { get; set; }
-		public virtual ICollection<GemiSureci> GemiSürecleri { get; set; }
+        public virtual ICollection<GC> GCler { get; set; }
+        public virtual ICollection<GemiSureci> GemiSürecleri { get; set; }
 		public virtual ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
         public virtual ICollection<FingerPrintData> FingerPrintDatas { get; set; }
     }

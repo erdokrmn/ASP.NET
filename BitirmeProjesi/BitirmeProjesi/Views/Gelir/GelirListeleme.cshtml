@@ -9,10 +9,13 @@
 <div class="table-responsive">
 	<table id="Gelir" class="table table-striped table-bordered dt-responsive text-nowrap overflow-scroll">
 		<thead>
+			
+			
 			<tr>
-				<th>Fatura Kesilen Şahıs</th>
+				<th>Gelir Faturası</th>
 				<th>Fatura Miktarı</th>
 				<th>Kesintiler </th>
+				<th>Kalan Tutar</th>
 				<th>Fatura Tarihi</th>
 				<th>Ödenme Tarih</th>
 				<th>Düzenleme</th>
@@ -21,12 +24,19 @@
 			</tr>
 		</thead>
 		<tbody>
+			@{
+				int a, b,c;
+			}
 			@foreach (var gelir in Model)
 			{
+				a = gelir.Miktar;
+				b = gelir.Kesinti;
+				c = a - b;
 				<tr>
 					<td>@gelir.FaturaKesilenAd</td>
 					<td>@gelir.Miktar</td>
 					<td>@gelir.Kesinti</td>
+					<td>@c</td>
 					<td>@gelir.FaturaTarihi.ToString("dd-MM-yyyy")</td>
 					<td>@gelir.ÖdenmeTarihi</td>
 
