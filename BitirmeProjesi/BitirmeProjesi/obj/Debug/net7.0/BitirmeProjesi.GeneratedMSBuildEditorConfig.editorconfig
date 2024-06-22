@@ -82,6 +82,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Maas/MaasDuzenleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1xNYWFzRHV6ZW5sZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Maas/MaasListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1xNYWFzTGlzdGVsZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Maas/Puantaj.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1xQdWFudGFqLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,6 +116,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Masraf/MasrafListeleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzcmFmXE1hc3JhZkxpc3RlbGVtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/OzelGun/OzelGunDuzenleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3plbEd1blxPemVsR3VuRHV6ZW5sZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/OzelGun/OzelGunKayıt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3plbEd1blxPemVsR3VuS2F5xLF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/OzelGun/OzelGunListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3plbEd1blxPemVsR3VuTGlzdGVsZW1lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Parmak/main.cshtml]

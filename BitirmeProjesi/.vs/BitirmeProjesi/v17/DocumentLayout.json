@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\controllers\\maascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\controllers\\maascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\maas\\maaslisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\maas\\maaslisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\puantajvemaa\u015F.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\puantajvemaa\u015F.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\controllers\\maascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\controllers\\maascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\maas\\puantaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\maas\\puantaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\maas\\maasduzenleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\maas\\maasduzenleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\models\\viewmodel\\puantajviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\models\\viewmodel\\puantajviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\tcpserver\\tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\tcpserver\\tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\controllers\\gccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\controllers\\gccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gc\\gckay\u0131t.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gc\\gckay\u0131t.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\models\\viewmodel\\maasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\models\\viewmodel\\maasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,71 +30,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACgAAABhAAAA",
+              "Title": "MaasDuzenleme.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\MaasDuzenleme.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Maas\\MaasDuzenleme.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\MaasDuzenleme.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\Maas\\MaasDuzenleme.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAB7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T05:52:34.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PuantajViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\ViewModel\\PuantajViewModel.cs",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Models\\ViewModel\\PuantajViewModel.cs",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\ViewModel\\PuantajViewModel.cs",
-              "RelativeToolTip": "BitirmeProjesi\\Models\\ViewModel\\PuantajViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T05:44:34.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PuantajVeMaa\u015F.cs",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\PuantajVeMaa\u015F.cs",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\PuantajVeMaa\u015F.cs",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\PuantajVeMaa\u015F.cs",
-              "RelativeToolTip": "BitirmeProjesi\\PuantajVeMaa\u015F.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T05:27:44.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TcpServer.cs",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\TcpServer\\TcpServer.cs",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\TcpServer\\TcpServer.cs",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\TcpServer\\TcpServer.cs",
-              "RelativeToolTip": "BitirmeProjesi\\TcpServer\\TcpServer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T20:12:06.162Z",
+              "WhenOpened": "2024-06-21T23:52:13.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MaasListeleme.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T22:25:51.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaasViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\ViewModel\\MaasViewModel.cs",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Models\\ViewModel\\MaasViewModel.cs",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\ViewModel\\MaasViewModel.cs",
+              "RelativeToolTip": "BitirmeProjesi\\Models\\ViewModel\\MaasViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:25:22.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MaasController.cs",
               "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\MaasController.cs",
               "RelativeDocumentMoniker": "BitirmeProjesi\\Controllers\\MaasController.cs",
               "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\MaasController.cs",
               "RelativeToolTip": "BitirmeProjesi\\Controllers\\MaasController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAuwCgAAAApAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAgwNMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T04:43:03.676Z",
+              "WhenOpened": "2024-06-21T18:38:36.352Z",
               "EditorCaption": ""
             },
             {
@@ -119,33 +94,7 @@
               "RelativeToolTip": "BitirmeProjesi\\Views\\Maas\\Puantaj.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T00:21:07.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GCController.cs",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GCController.cs",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Controllers\\GCController.cs",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GCController.cs",
-              "RelativeToolTip": "BitirmeProjesi\\Controllers\\GCController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T15:58:26.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GCKay\u0131t.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCKay\u0131t.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GC\\GCKay\u0131t.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCKay\u0131t.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\GC\\GCKay\u0131t.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T15:57:42.922Z",
+              "WhenOpened": "2024-06-20T15:31:36.531Z",
               "EditorCaption": ""
             }
           ]

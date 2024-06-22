@@ -4,6 +4,7 @@ using BitirmeProjesi.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BitirmeProjesi.Migrations
 {
     [DbContext(typeof(BitirmeProjesiDbContext))]
-    partial class BitirmeProjesiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240620235950_mig22")]
+    partial class mig22
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -221,22 +224,10 @@ namespace BitirmeProjesi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("DegerMaasi")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("MaasTarihi")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("MaasTutarı")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MesaiMaasi")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NormalMaas")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OzelGunMaasi")
                         .HasColumnType("int");
 
                     b.Property<Guid>("PersonelId")

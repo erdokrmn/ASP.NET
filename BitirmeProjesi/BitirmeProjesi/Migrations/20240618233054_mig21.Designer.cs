@@ -4,6 +4,7 @@ using BitirmeProjesi.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BitirmeProjesi.Migrations
 {
     [DbContext(typeof(BitirmeProjesiDbContext))]
-    partial class BitirmeProjesiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240618233054_mig21")]
+    partial class mig21
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -213,40 +216,6 @@ namespace BitirmeProjesi.Migrations
                     b.HasIndex("ParcaAdıId");
 
                     b.ToTable("GemiSurecleri");
-                });
-
-            modelBuilder.Entity("BitirmeProjesi.Models.Maas", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("DegerMaasi")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("MaasTarihi")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("MaasTutarı")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MesaiMaasi")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NormalMaas")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OzelGunMaasi")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("PersonelId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PersonelId");
-
-                    b.ToTable("Maaslar");
                 });
 
             modelBuilder.Entity("BitirmeProjesi.Models.Malzeme", b =>
@@ -550,17 +519,6 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("ParcaAdı");
                 });
 
-            modelBuilder.Entity("BitirmeProjesi.Models.Maas", b =>
-                {
-                    b.HasOne("BitirmeProjesi.Models.Personel", "Personel")
-                        .WithMany("Maaslar")
-                        .HasForeignKey("PersonelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Personel");
-                });
-
             modelBuilder.Entity("BitirmeProjesi.Models.Masraf", b =>
                 {
                     b.HasOne("BitirmeProjesi.Models.Firma", "Firma")
@@ -629,8 +587,6 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("GCler");
 
                     b.Navigation("GemiSürecleri");
-
-                    b.Navigation("Maaslar");
 
                     b.Navigation("Tevziler");
 
