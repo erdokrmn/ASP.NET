@@ -24,9 +24,6 @@ namespace BitirmeProjesi.Controllers
         public IActionResult GemiEnvanteriKayıt()
         {
             GemiEnvanteriViewModel model = new GemiEnvanteriViewModel();
-            //Zimmetler tablosuna personel ve malzemeler tablosunun verilerini kullandırtığım kısım
-            //model.GemiEnvanteriGemi = DbContext.GemiEnvanterleri.Include(b => b.GemiAdı).ToList();
-
             List<SelectListItem> gemiler = (from x in DbContext.Gemiler.ToList()
                                                select new SelectListItem
                                                {
@@ -120,5 +117,8 @@ namespace BitirmeProjesi.Controllers
                     break;
             }
         }
-    }
+
+		
+		
+	}
 }

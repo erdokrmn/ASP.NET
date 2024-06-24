@@ -155,6 +155,10 @@ namespace BitirmeProjesi.Migrations
                     b.Property<int>("TahminiBitirmeSuresi")
                         .HasColumnType("int");
 
+                    b.Property<string>("TershaneAdı")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Gemiler");
@@ -191,26 +195,30 @@ namespace BitirmeProjesi.Migrations
                     b.ToTable("GemiEnvanterleri");
                 });
 
-            modelBuilder.Entity("BitirmeProjesi.Models.GemiSureci", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.GemiSurec", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CalısanPersonellerId")
+                    b.Property<string>("Durum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("GemiEnvanteriId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("ParcaAdıId")
+                    b.Property<Guid>("PersonelId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("SürecTarihi")
+                    b.Property<DateTime>("Tarih")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CalısanPersonellerId");
+                    b.HasIndex("GemiEnvanteriId");
 
-                    b.HasIndex("ParcaAdıId");
+                    b.HasIndex("PersonelId");
 
                     b.ToTable("GemiSurecleri");
                 });
@@ -531,23 +539,23 @@ namespace BitirmeProjesi.Migrations
                     b.Navigation("GemiAdı");
                 });
 
-            modelBuilder.Entity("BitirmeProjesi.Models.GemiSureci", b =>
+            modelBuilder.Entity("BitirmeProjesi.Models.GemiSurec", b =>
                 {
-                    b.HasOne("BitirmeProjesi.Models.Personel", "CalısanPersoneller")
-                        .WithMany("GemiSürecleri")
-                        .HasForeignKey("CalısanPersonellerId")
+                    b.HasOne("BitirmeProjesi.Models.GemiEnvanteri", "GemiEnvanteri")
+                        .WithMany("GemiSurecleri")
+                        .HasForeignKey("GemiEnvanteriId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BitirmeProjesi.Models.GemiEnvanteri", "ParcaAdı")
-                        .WithMany("Parca")
-                        .HasForeignKey("ParcaAdıId")
+                    b.HasOne("BitirmeProjesi.Models.Personel", "Personel")
+                        .WithMany("GemiSurecleri")
+                        .HasForeignKey("PersonelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("CalısanPersoneller");
+                    b.Navigation("GemiEnvanteri");
 
-                    b.Navigation("ParcaAdı");
+                    b.Navigation("Personel");
                 });
 
             modelBuilder.Entity("BitirmeProjesi.Models.Maas", b =>
@@ -614,7 +622,7 @@ namespace BitirmeProjesi.Migrations
 
             modelBuilder.Entity("BitirmeProjesi.Models.GemiEnvanteri", b =>
                 {
-                    b.Navigation("Parca");
+                    b.Navigation("GemiSurecleri");
                 });
 
             modelBuilder.Entity("BitirmeProjesi.Models.Malzeme", b =>
@@ -628,7 +636,7 @@ namespace BitirmeProjesi.Migrations
 
                     b.Navigation("GCler");
 
-                    b.Navigation("GemiSürecleri");
+                    b.Navigation("GemiSurecleri");
 
                     b.Navigation("Maaslar");
 

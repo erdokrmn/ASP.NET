@@ -1,4 +1,4 @@
-﻿@model BitirmeProjesi.Models.ViewModel.GemiViewModel
+﻿@model BitirmeProjesi.Models.Gemi
 
 
 <form method="post" action="GemiDuzenleme" class="mt-5">
@@ -11,6 +11,10 @@
         <input type="text" class="form-control" asp-for="GemiAdı">
     </div>
     <div class="mb-3">
+        <label for="" class="form-label">Tershane Adı</label>
+        <input type="text" class="form-control" asp-for="TershaneAdı">
+    </div>
+    <div class="mb-3">
         <label for="" class="form-label">Gemi Tipi</label>
         <input type="text" class="form-control" asp-for="GemiTipi">
     </div>
@@ -18,8 +22,6 @@
         <label for="" class="form-label">Tahmini Bitirme Süresi(Gün)</label>
         <input type="number" class="form-control" asp-for="TahminiBitirmeSuresi">
     </div>
-
-
     <div class="mb-3">
         <label for="" class="form-label">Gemiye Başlama Tarihi</label>
         <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="GemiyeBaslamaTarihi">

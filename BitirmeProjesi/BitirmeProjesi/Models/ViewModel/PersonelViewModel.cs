@@ -44,7 +44,7 @@ namespace BitirmeProjesi.Models.ViewModel
 
 
         public ICollection<Tevzi> Tevziler { get; set; }
-        public ICollection<GemiSureci> GemiSürecleri { get; set; }
+        public ICollection<GemiEnvanteri> GemiEnvanterleri { get; set; }
         public ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
     }
 }

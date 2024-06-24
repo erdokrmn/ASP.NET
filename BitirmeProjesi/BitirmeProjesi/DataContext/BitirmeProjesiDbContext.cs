@@ -13,8 +13,8 @@ namespace BitirmeProjesi.DataContext
         }
         public DbSet<Gemi> Gemiler { get; set; }
         public DbSet<GemiEnvanteri> GemiEnvanterleri { get; set; }
-        public DbSet<GemiSureci> GemiSurecleri { get; set; }
-        public DbSet<Malzeme> Malzemeler { get; set; }
+		public DbSet<GemiSurec> GemiSurecleri { get; set; }
+		public DbSet<Malzeme> Malzemeler { get; set; }
         public DbSet<Masraf> Masraflar { get; set; }
         public DbSet<Personel> Personeller { get; set; }
         public DbSet<Tevzi> Tevziler { get; set; }

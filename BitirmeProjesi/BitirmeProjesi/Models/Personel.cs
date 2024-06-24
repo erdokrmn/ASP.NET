@@ -50,7 +50,7 @@ namespace BitirmeProjesi.Models
 		public virtual ICollection<Tevzi> Tevziler { get; set; }
         public virtual ICollection<Maas> Maaslar { get; set; }
         public virtual ICollection<GC> GCler { get; set; }
-        public virtual ICollection<GemiSureci> GemiSürecleri { get; set; }
+        public virtual ICollection<GemiSurec> GemiSurecleri { get; set; }
 		public virtual ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
         public virtual ICollection<FingerPrintData> FingerPrintDatas { get; set; }
     }

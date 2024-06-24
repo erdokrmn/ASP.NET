@@ -12,7 +12,9 @@ namespace BitirmeProjesi.Models
         
         public string GemiTipi { get; set; }
 
-        public int TahminiBitirmeSuresi { get; set; }
+		public string TershaneAdı { get; set; }
+
+		public int TahminiBitirmeSuresi { get; set; }
         [Required]
         public DateTime GemiyeBaslamaTarihi { get; set; }
 

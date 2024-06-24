@@ -89,6 +89,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Syncfusion.EJ2.AspNet.Core": {
+              "target": "Package",
+              "version": "[26.1.38, )"
+            },
             "System.Data.OleDb": {
               "target": "Package",
               "version": "[8.0.0, )"

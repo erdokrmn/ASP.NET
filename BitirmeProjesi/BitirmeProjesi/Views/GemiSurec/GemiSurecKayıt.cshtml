@@ -1,0 +1,76 @@
+﻿@using Syncfusion.EJ2
+@model BitirmeProjesi.Models.ViewModel.GemiSurecViewModel
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-multiselect@0.9.15/dist/css/bootstrap-multiselect.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.0/css/bootstrap-multiselect.css">
+
+
+
+<div class="table-responsive">
+    <form asp-action="KayıtGemiSurec" method="post">
+        <table id="GemiSurec" class="table table-striped table-bordered dt-responsive width overflow-auto overflow-scroll">
+            <thead>
+                <tr>
+                    <th>Gemi Adı</th>
+                    <th>Parca Adı</th>
+                    <th>Location </th>
+                    <th>Zone</th>
+                    <th>Parça Miktarı</th>
+                    <th>Personeller</th>
+                    <th>Durum</th>
+                    <th>Tarih</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tevzi in Model.GemiEnvanterleri)
+                {
+                    <tr>
+                        <td>@Model.GemiAdlari[tevzi.GemiId]</td>
+                        <td>@tevzi.ParcaAdı</td>
+                        <td>@tevzi.Location</td>
+                        <td>@tevzi.Zone</td>
+                        <td>@tevzi.ParcaMiktarı</td>
+                        <td width="200px">
+                            <select id="personelSelect_@tevzi.Id" multiple class="form-control personel-select" name="PersonelIds" size="3">
+                                @foreach (var personel in Model.Personeller)
+                                {
+                                    <option value="@personel.Id">@personel.Ad @personel.Soyad</option>
+                                }
+                            </select>
+                        </td>
+                       
+                        
+                        <td width="150px">
+                            <select class="form-control" name="Durum">
+                                <option value="Baslamadi">Başlamadı</option>
+                                <option value="Devam">Devam</option>
+                                <option value="Tamamlandi">Tamamlandı</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" class="form-control" name="Tarih" />
+                        </td>
+                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <input type="hidden" name="GemiEnvanteriId" value="@Model.GemiEnvanterleri.FirstOrDefault()?.Id" />
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-multiselect@0.9.15/dist/js/bootstrap-multiselect.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.0/js/bootstrap-multiselect.min.js"></script>
+
+<script>
+    new DataTable('#GemiSurec');
+</script>
+

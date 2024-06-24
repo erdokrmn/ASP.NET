@@ -597,3 +597,5 @@ C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\bin\Debug
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\bin\Debug\net7.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\bin\Debug\net7.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\bin\Debug\net7.0\Syncfusion.EJ2.dll
+C:\Users\erdo\Documents\ASP.NET\ASP.NET-\BitirmeProjesi\BitirmeProjesi\bin\Debug\net7.0\Syncfusion.Licensing.dll

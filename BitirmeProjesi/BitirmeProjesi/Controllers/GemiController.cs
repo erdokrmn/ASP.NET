@@ -29,7 +29,7 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-        public async Task<IActionResult> GemiKayıt(GemiViewModel addGemiRequest)
+        public async Task<IActionResult> GemiKayıt(Gemi addGemiRequest)
         {
             //Kayıt kısmı
             var gemi = new Gemi()
@@ -37,7 +37,8 @@ namespace BitirmeProjesi.Controllers
                 Id = Guid.NewGuid(),
                 GemiAdı = addGemiRequest.GemiAdı,
                 GemiTipi = addGemiRequest.GemiTipi,
-                TahminiBitirmeSuresi = addGemiRequest.TahminiBitirmeSuresi,
+				TershaneAdı = addGemiRequest.TershaneAdı,
+				TahminiBitirmeSuresi = addGemiRequest.TahminiBitirmeSuresi,
                 GemiyeBaslamaTarihi = addGemiRequest.GemiyeBaslamaTarihi,
 
             };
@@ -54,11 +55,12 @@ namespace BitirmeProjesi.Controllers
 			var gemi = await DbContext.Gemiler.FirstOrDefaultAsync(x => x.Id == id);
 			if (gemi != null)
 			{
-				var viewModel = new GemiViewModel()
+				var viewModel = new Gemi()
 				{
 					Id = gemi.Id,
 					GemiAdı = gemi.GemiAdı,
 					GemiTipi= gemi.GemiTipi,
+					TershaneAdı = gemi.TershaneAdı,
 					TahminiBitirmeSuresi = gemi.TahminiBitirmeSuresi,
 					GemiyeBaslamaTarihi = gemi.GemiyeBaslamaTarihi,
 					

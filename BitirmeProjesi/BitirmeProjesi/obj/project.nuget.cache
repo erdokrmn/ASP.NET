@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RFqfiz5hTOK3W7gDjBGZU8iwZvqtEukLF7O9sQuOOLPS/JPu55cT4rCl65CHcvMDofV2zZiCDiQiyFKT+oXiOA==",
+  "dgSpecHash": "hNxKVA6ny1rIB6HwBEPoPMis81pVi363yNI2R1/MWD6gBI9hyeQvgk00LDiJOYBt9VvtIPbK+/2o/GRmxhjPLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\BitirmeProjesi.csproj",
   "expectedPackageFiles": [
@@ -92,7 +92,7 @@
     "C:\\Users\\erdo\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\erdo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\nuget.common\\5.11.0\\nuget.common.5.11.0.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\nuget.configuration\\5.11.0\\nuget.configuration.5.11.0.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\nuget.dependencyresolver.core\\5.11.0\\nuget.dependencyresolver.core.5.11.0.nupkg.sha512",
@@ -122,6 +122,8 @@
     "C:\\Users\\erdo\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\syncfusion.ej2.aspnet.core\\26.1.38\\syncfusion.ej2.aspnet.core.26.1.38.nupkg.sha512",
+    "C:\\Users\\erdo\\.nuget\\packages\\syncfusion.licensing\\26.1.38\\syncfusion.licensing.26.1.38.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\erdo\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
