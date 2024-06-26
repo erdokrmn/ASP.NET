@@ -43,7 +43,6 @@ namespace BitirmeProjesi.Models.ViewModel
         public bool CalısmaDurumu { get; set; }
 
 
-        public ICollection<Tevzi> Tevziler { get; set; }
         public ICollection<GemiEnvanteri> GemiEnvanterleri { get; set; }
         public ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
     }

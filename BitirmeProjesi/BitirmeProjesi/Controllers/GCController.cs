@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using BitirmeProjesi.DataContext;
 using System.Text.RegularExpressions;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -17,11 +18,14 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public IActionResult GCKayıt()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         [HttpPost]
         public async Task<ActionResult> UploadFile(IFormFile file, GemiEnvanteriViewModel viewModel)
         {

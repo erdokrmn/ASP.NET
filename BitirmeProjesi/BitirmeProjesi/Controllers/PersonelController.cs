@@ -1,6 +1,7 @@
 ﻿using BitirmeProjesi.DataContext;
 using BitirmeProjesi.Models;
 using BitirmeProjesi.Models.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,12 +16,16 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+
         [HttpGet]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public IActionResult PersonelKayıt()
         {
             return View();
         }
+
         [HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> PersonelKayıt(PersonelViewModel addPersonelRequest)
         {
             //Kayıt kısmı
@@ -53,7 +58,9 @@ namespace BitirmeProjesi.Controllers
             await DbContext.SaveChangesAsync();
             return RedirectToAction("PersonelListeleme");
         }
+
         [HttpGet]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> PersonelListeleme()
         {
             var personeller = await DbContext.Personeller.ToListAsync();
@@ -64,7 +71,8 @@ namespace BitirmeProjesi.Controllers
         }
 
 		[HttpGet]
-		public async Task<IActionResult> PersonelDuzenleme(Guid id)
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
+        public async Task<IActionResult> PersonelDuzenleme(Guid id)
 		{
 			//Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
 			var personel = await DbContext.Personeller.FirstOrDefaultAsync(x => x.Id == id);
@@ -100,6 +108,7 @@ namespace BitirmeProjesi.Controllers
 
 
 		[HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> Delete(UpdatePersonelViewModel updatePersonelViewModel)
         {
             //silme kısmı
@@ -115,6 +124,7 @@ namespace BitirmeProjesi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> PersonelDuzenleme(UpdatePersonelViewModel updatePersonelViewModel)
         {
             //Düzenleme yapılan kısım

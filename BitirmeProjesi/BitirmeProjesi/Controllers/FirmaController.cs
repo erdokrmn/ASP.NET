@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
+using System.ComponentModel.DataAnnotations;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -19,14 +20,15 @@ namespace BitirmeProjesi.Controllers
 
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Muhasebeci")]
         public IActionResult FirmaKayıt()
 		{
-          
             return View();
 		}
+
 		[HttpGet]
-		public async Task<IActionResult> FirmaListeleme()
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> FirmaListeleme()
 		{
 			var firmalar = await DbContext.Firmalar.ToListAsync();
 
@@ -37,27 +39,43 @@ namespace BitirmeProjesi.Controllers
 
        
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Muhasebeci")]
+
         public async Task<IActionResult> FirmaKayıt(Firma addFirmaRequest)
 		{
-			//Kayıt kısmı
-			var firma = new Firma()
-			{
-				Id = Guid.NewGuid(),
-				FirmaAdı = addFirmaRequest.FirmaAdı,
-				TelofonNo = addFirmaRequest.TelofonNo,
-				Iban = addFirmaRequest.Iban,
-				İlgiliKisi = addFirmaRequest.İlgiliKisi,
+            //Kayıt kısmı
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors);
+                foreach (var error in errors)
+                {
+                    Console.WriteLine(error.ErrorMessage); // veya loglama yapabilirsiniz
+                }
+                return View(addFirmaRequest);
 
-			};
-			await DbContext.Firmalar.AddAsync(firma);
-			await DbContext.SaveChangesAsync();
+            }
+            var firma = new Firma()
+            {
+                Id = Guid.NewGuid(),
+                FirmaAdı = addFirmaRequest.FirmaAdı,
+                TelofonNo = addFirmaRequest.TelofonNo,
+                Iban = addFirmaRequest.Iban,
+                İlgiliKisi = addFirmaRequest.İlgiliKisi,
+            };
 
-			return RedirectToAction("FirmaListeleme");
-		}
+            DbContext.Firmalar.Add(firma);
+            await DbContext.SaveChangesAsync();
+
+            return RedirectToAction("FirmaListeleme");
+
+
+
+
+        }
 
 		[HttpGet]
-		public async Task<IActionResult> FirmaDuzenleme(Guid id)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> FirmaDuzenleme(Guid id)
 		{
 			//Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
 			var firma = await DbContext.Firmalar.FirstOrDefaultAsync(x => x.Id == id);
@@ -76,8 +94,10 @@ namespace BitirmeProjesi.Controllers
 			}
 			return RedirectToAction("FirmaListeleme");
 		}
+
 		[HttpPost]
-		public async Task<IActionResult> Delete(Firma updateFirma)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> Delete(Firma updateFirma)
 		{
 			//silme kısmı
 			var firma = DbContext.Firmalar.Find(updateFirma.Id);
@@ -92,7 +112,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> FirmaDuzenleme(Firma updateFirma)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> FirmaDuzenleme(Firma updateFirma)
 		{
 			//Düzenleme yapılan kısım
 			var firma = DbContext.Firmalar.Find(updateFirma.Id);

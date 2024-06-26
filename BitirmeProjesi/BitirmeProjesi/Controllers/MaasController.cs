@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BitirmeProjesi.DataContext;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -15,24 +16,29 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+
+        [Authorize(Roles = "Admin,Muhasebeci")]
         public IActionResult Puantaj()
         {
             return View();
         }
+
 		[HttpGet]
-		public async Task<IActionResult> MaasListeleme()
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MaasListeleme()
 		{
 			MaasViewModel model = new MaasViewModel();
 			//Tevziler tablosuna personel tablosunun verilerini kullandırtığım kısım
 			model.MaasPersonel = DbContext.Maaslar.Include(b => b.Personel).ToList();
-			var tevziler = await DbContext.Tevziler.ToListAsync();
 
 			return View(model);
 
 
 		}
+
 		[HttpGet]
-		public async Task<IActionResult> MaasDuzenleme(Guid id)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MaasDuzenleme(Guid id)
 		{
 			List<SelectListItem> personeller = (from x in DbContext.Personeller.ToList()
 											 select new SelectListItem
@@ -61,8 +67,10 @@ namespace BitirmeProjesi.Controllers
 			}
 			return RedirectToAction("MaasListeleme");
 		}
+
 		[HttpPost]
-		public async Task<IActionResult> Delete(Maas deleteViewModel)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> Delete(Maas deleteViewModel)
 		{
 			//silme kısmı
 			var maas = DbContext.Maaslar.Find(deleteViewModel.Id);
@@ -77,7 +85,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> MaasDuzenleme(Maas updateMaasViewModel)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MaasDuzenleme(Maas updateMaasViewModel)
 		{
 			var SelectedFirmaId = updateMaasViewModel.PersonelId;
 
@@ -102,7 +111,9 @@ namespace BitirmeProjesi.Controllers
 
 		}
 
+
 		[HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> Puantaj(DateTime baslangicTarihi)
         {
             var zamanlamalar = await DbContext.GCs
@@ -132,6 +143,7 @@ namespace BitirmeProjesi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> MaasHesapla(List<PuantajViewModel> model)
         {
             foreach (var item in model)

@@ -1,24 +1,38 @@
 ﻿@model BitirmeProjesi.Models.Firma
 
 
-<form method="post" action="FirmaKayıt" class="mt-5">
+<form asp-action="FirmaKayıt" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
     <div class="mb-3">
-        <label for="" class="form-label">Firma Adı</label>
+        <label for="FirmaAdı" class="form-label">Firma Adı</label>
         <input type="text" class="form-control" asp-for="FirmaAdı">
+        <span asp-validation-for="FirmaAdı" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
-        <label for="" class="form-label">Telefon Numarası</label>
-        <input type="tel" class="form-control" asp-for="TelofonNo">
+        <label for="TelofonNo" class="form-label">Telefon Numarası</label>
+        <input type="text" class="form-control" asp-for="TelofonNo">
+        <span asp-validation-for="TelofonNo" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
-        <label for="" class="form-label">Iban</label>
+        <label for="Iban" class="form-label">IBAN</label>
         <input type="text" class="form-control" asp-for="Iban">
+        <span asp-validation-for="Iban" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
-        <label for="" class="form-label">Firmadaki Kişi</label>
+        <label for="İlgiliKisi" class="form-label">İlgili Kişi</label>
         <input type="text" class="form-control" asp-for="İlgiliKisi">
+        <span asp-validation-for="İlgiliKisi" class="text-danger"></span>
     </div>
 
-
-    <button type="submit" class="btn btn-primary">Kayıt Et</button>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

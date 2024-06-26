@@ -17,8 +17,9 @@ namespace BitirmeProjesi.Models.ViewModel
     public enum UserRoles
     {
         Admin,
-        AdminYardimcisi,
-        Yetki1,
-        Yetki2
+        Muhasebeci,
+        Depocu,
+        Muhendis,
+        Puantor,
     }
 }

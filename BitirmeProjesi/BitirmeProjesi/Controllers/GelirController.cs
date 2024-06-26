@@ -3,6 +3,7 @@ using BitirmeProjesi.Models.ViewModel;
 using BitirmeProjesi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -14,11 +15,14 @@ namespace BitirmeProjesi.Controllers
 		{
 			this.DbContext = DbContext;
 		}
-		public IActionResult GelirKayıt()
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public IActionResult GelirKayıt()
 		{
 			return View();
 		}
-		[HttpGet]
+
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        [HttpGet]
 		public async Task<IActionResult> GelirListeleme()
 		{
 			var gelirler = await DbContext.Gelirler.ToListAsync();
@@ -29,7 +33,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> GelirKayıt(Gelir addGelirRequest)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> GelirKayıt(Gelir addGelirRequest)
 		{
 			//Kayıt kısmı
 			var gelir = new Gelir()
@@ -49,7 +54,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> GelirDuzenleme(Guid id)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> GelirDuzenleme(Guid id)
 		{
 			//Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
 			var gelir = await DbContext.Gelirler.FirstOrDefaultAsync(x => x.Id == id);
@@ -69,8 +75,10 @@ namespace BitirmeProjesi.Controllers
 			}
 			return RedirectToAction("GelirListeleme");
 		}
+
 		[HttpPost]
-		public async Task<IActionResult> Delete(Gelir updateGelirViewModel)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> Delete(Gelir updateGelirViewModel)
 		{
 			//silme kısmı
 			var gelir = DbContext.Gelirler.Find(updateGelirViewModel.Id);
@@ -84,8 +92,10 @@ namespace BitirmeProjesi.Controllers
 			return RedirectToAction("GelirListeleme");
 		}
 
+
 		[HttpPost]
-		public async Task<IActionResult> GelirDuzenleme(Gelir updateGelirViewModel)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> GelirDuzenleme(Gelir updateGelirViewModel)
 		{
 			//Düzenleme yapılan kısım
 			var gelir = DbContext.Gelirler.Find(updateGelirViewModel.Id);

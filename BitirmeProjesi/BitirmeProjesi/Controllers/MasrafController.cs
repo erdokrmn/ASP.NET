@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BitirmeProjesi.DataContext;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -15,7 +16,9 @@ namespace BitirmeProjesi.Controllers
 		{
 			this.DbContext = DbContext;
 		}
-		public IActionResult MasrafKayıt()
+
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public IActionResult MasrafKayıt()
 		{
             List<SelectListItem> firmalar = (from x in DbContext.Firmalar.ToList()
                                              select new SelectListItem
@@ -26,8 +29,10 @@ namespace BitirmeProjesi.Controllers
             ViewBag.Firmalar = firmalar;
             return View();
 		}
+
 		[HttpGet]
-		public async Task<IActionResult> MasrafListeleme()
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MasrafListeleme()
 		{
 			MasrafListelemeViewModel model = new MasrafListelemeViewModel();
 			model.MasrafFirma = DbContext.Masraflar.Include(b => b.Firma).ToList();
@@ -39,7 +44,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> MasrafKayıt(MasrafViewModel addMasrafRequest)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MasrafKayıt(MasrafViewModel addMasrafRequest)
 		{
 			var SelectedFirmaId = addMasrafRequest.firmalar.Id;
 			// alttaki ile kontrol yapıcam ileride
@@ -67,7 +73,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> MasrafDuzenleme(Guid id)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MasrafDuzenleme(Guid id)
 		{
             List<SelectListItem> firmalar = (from x in DbContext.Firmalar.ToList()
                                              select new SelectListItem
@@ -95,8 +102,10 @@ namespace BitirmeProjesi.Controllers
 			}
 			return RedirectToAction("MasrafListeleme");
 		}
+
 		[HttpPost]
-		public async Task<IActionResult> Delete(Masraf updateMasrafViewModel)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> Delete(Masraf updateMasrafViewModel)
 		{
 			//silme kısmı
 			var masraf = DbContext.Masraflar.Find(updateMasrafViewModel.Id);
@@ -111,7 +120,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> MasrafDuzenleme(Masraf updateMasrafViewModel)
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MasrafDuzenleme(Masraf updateMasrafViewModel)
 		{
 			var SelectedFirmaId = updateMasrafViewModel.FirmaId;
 

@@ -3,6 +3,7 @@ using BitirmeProjesi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BitirmeProjesi.DataContext;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -14,12 +15,17 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+
+        [Authorize(Roles = "Admin,Muhendis")]
         public IActionResult GemiKayıt()
         {
             return View();
         }
+
+
 		[HttpGet]
-		public async Task<IActionResult> GemiListeleme()
+        [Authorize(Roles = "Admin,Muhendis")]
+        public async Task<IActionResult> GemiListeleme()
 		{
 			var gemiler = await DbContext.Gemiler.ToListAsync();
 
@@ -29,6 +35,7 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
+        [Authorize(Roles = "Admin,Muhendis")]
         public async Task<IActionResult> GemiKayıt(Gemi addGemiRequest)
         {
             //Kayıt kısmı
@@ -49,7 +56,8 @@ namespace BitirmeProjesi.Controllers
         }
 
 		[HttpGet]
-		public async Task<IActionResult> GemiDuzenleme(Guid id)
+        [Authorize(Roles = "Admin,Muhendis")]
+        public async Task<IActionResult> GemiDuzenleme(Guid id)
 		{
 			//Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
 			var gemi = await DbContext.Gemiler.FirstOrDefaultAsync(x => x.Id == id);
@@ -69,8 +77,10 @@ namespace BitirmeProjesi.Controllers
 			}
 			return RedirectToAction("PersonelListeleme");
 		}
+
 		[HttpPost]
-		public async Task<IActionResult> Delete(GemiViewModel updateGemiViewModel)
+        [Authorize(Roles = "Admin,Muhendis")]
+        public async Task<IActionResult> Delete(GemiViewModel updateGemiViewModel)
 		{
 			//silme kısmı
 			var gemi = DbContext.Gemiler.Find(updateGemiViewModel.Id);
@@ -85,7 +95,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> GemiDuzenleme(GemiViewModel updateGemiViewModel)
+        [Authorize(Roles = "Admin,Muhendis")]
+        public async Task<IActionResult> GemiDuzenleme(GemiViewModel updateGemiViewModel)
 		{
 			//Düzenleme yapılan kısım
 			var gemi = DbContext.Gemiler.Find(updateGemiViewModel.Id);

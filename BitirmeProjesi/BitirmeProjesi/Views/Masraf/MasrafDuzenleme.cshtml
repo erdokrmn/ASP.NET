@@ -37,5 +37,7 @@
     <button type="submit" class="btn btn-primary">Kayıt Et</button>
     <button type="submit" class="btn btn-danger"
             asp-action="Delete"
-            asp-controller="Masraf">Sil</button>
+            asp-controller="Masraf" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">
+        Sil
+    </button>
 </form>

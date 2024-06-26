@@ -44,6 +44,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration": "6.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.0",
+          "Microsoft.jQuery.Unobtrusive.Validation": "4.0.0",
           "Syncfusion.EJ2.AspNet.Core": "26.1.38",
           "System.Data.OleDb": "8.0.0",
           "System.Data.SqlClient": "4.8.6",
@@ -461,6 +462,11 @@
       },
       "jQuery/3.7.1": {},
       "jquery.datatables/1.10.15": {
+        "dependencies": {
+          "jQuery": "3.7.1"
+        }
+      },
+      "jQuery.Validation/1.8.0.1": {
         "dependencies": {
           "jQuery": "3.7.1"
         }
@@ -1757,6 +1763,12 @@
         },
         "compile": {
           "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        }
+      },
+      "Microsoft.jQuery.Unobtrusive.Validation/4.0.0": {
+        "dependencies": {
+          "jQuery": "3.7.1",
+          "jQuery.Validation": "1.8.0.1"
         }
       },
       "Microsoft.NETCore.Platforms/5.0.0": {},
@@ -5048,6 +5060,13 @@
       "path": "jquery.datatables/1.10.15",
       "hashPath": "jquery.datatables.1.10.15.nupkg.sha512"
     },
+    "jQuery.Validation/1.8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cSBTW8FiNcFYy7h8jY38ffnJGia25HQH/z1TP3f8OKZhn1ZSGS7Bebz9nMevKbtsAjzHhDFp/Cq0cT+ixwiB5A==",
+      "path": "jquery.validation/1.8.0.1",
+      "hashPath": "jquery.validation.1.8.0.1.nupkg.sha512"
+    },
     "MessagePack/2.1.152": {
       "type": "package",
       "serviceable": true,
@@ -5488,6 +5507,13 @@
       "sha512": "sha512-irv0HuqoH8Ig5i2fO+8dmDNdFdsrO+DoQcedwIlb810qpZHBNQHZLW7C/AHBQDgLLpw2T96vmMAy/aE4Yj55Sg==",
       "path": "microsoft.io.recyclablememorystream/3.0.0",
       "hashPath": "microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Validation/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RJ1eBcFIwHINVocYtOlmBQd21jGgHOHGe7TLzmQ9VMRMUqAlJoxyCw1AayBkdExqrEZt0Wz9uaZiDX75NHQmSw==",
+      "path": "microsoft.jquery.unobtrusive.validation/4.0.0",
+      "hashPath": "microsoft.jquery.unobtrusive.validation.4.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",

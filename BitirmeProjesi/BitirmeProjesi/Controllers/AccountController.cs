@@ -18,6 +18,7 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+
         public IActionResult Login()
         {
             return View();

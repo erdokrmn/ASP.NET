@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq.Dynamic.Core;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -18,7 +19,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult ZimmetKayıt()
+        [Authorize(Roles = "Admin,Depocu,Muhendis")]
+        public IActionResult ZimmetKayıt()
 		{
             List<SelectListItem> malzemeler = (from x in DbContext.Malzemeler.ToList()
                                                select new SelectListItem
@@ -39,7 +41,10 @@ namespace BitirmeProjesi.Controllers
 
             return View();
 		}
+
+
         [HttpPost]
+        [Authorize(Roles = "Admin,Depocu,Muhendis")]
         public async Task<IActionResult> ZimmetKayıt(ZimmetViewModel addZimmetRequest)
         {
             var SelectedmalzemeId = addZimmetRequest.malzemeler.Id;
@@ -64,13 +69,13 @@ namespace BitirmeProjesi.Controllers
         }
 
 		[HttpGet]
-		public async Task<IActionResult> ZimmetListeleme()
+        [Authorize(Roles = "Admin,Depocu,Muhendis")]
+        public async Task<IActionResult> ZimmetListeleme()
 		{
 			ZimmetListelemeViewModel model = new ZimmetListelemeViewModel();
 			//Zimmetler tablosuna personel ve malzemeler tablosunun verilerini kullandırtığım kısım
 			model.ZimmetPersonelMalzeme = DbContext.Zimmetler.Include(b => b.ZimmetEdilenKisi).ToList();
 			model.ZimmetPersonelMalzeme = DbContext.Zimmetler.Include(b => b.ZimmetEdilenMalzeme).ToList();
-			var tevziler = await DbContext.Tevziler.ToListAsync();
 
 			return View(model);
 
@@ -78,7 +83,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Delete(Guid Id)
+        [Authorize(Roles = "Admin,Depocu,Muhendis")]
+        public async Task<IActionResult> Delete(Guid Id)
 		{
 			//silme kısmı
 			var zimmet = DbContext.Zimmetler.Find(Id);

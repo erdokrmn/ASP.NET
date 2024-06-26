@@ -1,12 +1,9 @@
-1-) Gemi Süreci kısmı eklenecek
+
 2-) Maaşlar Gider tablosunda otomatik olarak gider gösterilecek(Maaşlar ödenince buradan düşecek.)
-3-) Yetkilendirme işlemleri bitecek
 4-) Listeleme işlemlerinden sonra navbarların tıklanmama olayı düzeltilecek
 5-) Görsellik eklenecek
-6-) Gemi Envanteri silme işlemleri yapılacak(Hangi gemiye kayıtlıysa)
-7-) Eski tevzi kayıt ve listeleme kısmı projeden kaldıralacak
+
 8-) Yanlış veri girildiğinde kayıt işlemleri hata mesajı döndürmesi yapılacak(Programı kapatmayacak)
 9-) Excell Yükleme ekranlarına görselliği düzenlenecek
-10-) Giriş Çıkış bilgileri üzerinden Tevzi ekranı ayarlanacak (bitti)
-11-) Tevzi bilgilerine göre maaş hesaplanacak. (Bitti)
+
 12-) Gelir ve giderlerin ortak listelendiği ekran yapılacak

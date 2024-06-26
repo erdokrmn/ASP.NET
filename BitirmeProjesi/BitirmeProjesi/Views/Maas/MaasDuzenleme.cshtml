@@ -42,7 +42,8 @@
     <button type="submit" class="btn btn-primary">Düzenle</button>
     <button type="submit" class="btn btn-danger"
             asp-action="Delete"
-            asp-controller="Maas">
+            asp-controller="Maas" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">
+        
         Sil
     </button>
 </form>

@@ -14,12 +14,15 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public IActionResult OzelGunKayıt()
         {
             return View();
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> OzelGunListeleme()
         {
             var ozelgunler = await DbContext.OzelGunler.ToListAsync();
@@ -30,7 +33,7 @@ namespace BitirmeProjesi.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> OzelGunKayıt(OzelGun addOzelGunRequest)
         {
             //Kayıt kısmı
@@ -49,6 +52,7 @@ namespace BitirmeProjesi.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> OzelGunDuzenleme(Guid id)
         {
             //Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
@@ -70,6 +74,7 @@ namespace BitirmeProjesi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> Delete(OzelGun updateGelirViewModel)
         {
             //silme kısmı
@@ -85,6 +90,7 @@ namespace BitirmeProjesi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> OzelGunDuzenleme(OzelGun updateOzelGun)
         {
             //Düzenleme yapılan kısım

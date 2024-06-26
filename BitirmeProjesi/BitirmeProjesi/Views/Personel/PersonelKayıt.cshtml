@@ -25,10 +25,13 @@
         <label for="" class="form-label">Maaş</label>
         <input type="number" class="form-control" asp-for="Maas">
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Yetki</label>
-        <input type="text" class="form-control" asp-for="Yetki">
-    </div>
+    <td width="150px">
+        <select class="form-control" name="Yetki">
+            <option value="SahaElamanı">Saha Elamanı</option>
+            <option value="MuhasabeElamanı">Muhasabe Elamanı</option>
+            <option value="DepoGörevlisi">Depo Görevlisi</option>
+        </select>
+    </td>
     <div class="mb-3">
         <label for="" class="form-label">Kan Grubu</label>
         <input type="text" class="form-control" asp-for="KanGrubu">

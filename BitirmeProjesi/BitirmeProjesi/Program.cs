@@ -3,6 +3,7 @@ using BitirmeProjesi.Models;
 using BitirmeProjesi.TcpServer;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -34,27 +35,48 @@ builder.Services.AddAuthorization(options =>
     });
     options.AddPolicy("RequireAdminAssistantRole", policy =>
     {
-        policy.RequireRole("AdminAssistant");
+        policy.RequireRole("Muhendis");
     });
-    options.AddPolicy("RequirePermission1", policy =>
+    options.AddPolicy("RequireDepocu", policy =>
     {
-        policy.RequireRole("Permission1");
+        policy.RequireRole("Depocu");
     });
-    options.AddPolicy("RequirePermission2", policy =>
+    options.AddPolicy("RequireMuhasebeci", policy =>
     {
-        policy.RequireRole("Permission2");
+        policy.RequireRole("Muhasebeci");
+    });
+    options.AddPolicy("RequirePuantor", policy =>
+    {
+        policy.RequireRole("Puantor");
     });
     //hem admin veya admin asistaný eriþebileceði yerler
-    options.AddPolicy("RequireAdminOrAdminAssistant", policy =>
+    options.AddPolicy("RequireAdminOrMuhasebeci", policy =>
     {
-        policy.RequireRole("Admin", "AdminAssistant");
+        policy.RequireRole("Admin", "Muhasebeci");
     });
     //permission1 ve permission2 eriþebiliyor
-    options.AddPolicy("RequirePermission1AndPermission2", policy =>
+    options.AddPolicy("RequireAdminOrMuhendis", policy =>
     {
-        policy.RequireRole("Permission1", "Permission2");
+        policy.RequireRole("Admin", "Muhendis");
+    });
+    options.AddPolicy("RequireAdminOrDepocuOrMuhendis", policy =>
+    {
+        policy.RequireRole("Admin", "Depocu","Muhendis");
+    });
+    options.AddPolicy("RequireAdminOrMuhasebeciOrPuantör", policy =>
+    {
+        policy.RequireRole("Admin", "Puantor","Muhasebeci");
+    });
+    options.AddPolicy("RequireAdminOrMuhasebeciOrPuantörOrMuhendis", policy =>
+    {
+        policy.RequireRole("Admin", "Puantor", "Muhasebeci","Muhendis");
     });
 });
+
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation().AddMvcOptions(options =>
+{
+    options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+}).AddDataAnnotationsLocalization();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

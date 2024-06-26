@@ -3,6 +3,7 @@ using BitirmeProjesi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BitirmeProjesi.DataContext;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -15,11 +16,13 @@ namespace BitirmeProjesi.Controllers
 		{
 			this.DbContext = DbContext;
 		}
-		public IActionResult MalzemeKayıt()
+        [Authorize(Roles = "Admin,Muhendis,Depocu")]
+        public IActionResult MalzemeKayıt()
 		{
 			return View();
 		}
-		[HttpGet]
+        [Authorize(Roles = "Admin,Muhendis,Depocu")]
+        [HttpGet]
 		public async Task<IActionResult> MalzemeListeleme()
 		{
 			var malzemeler = await DbContext.Malzemeler.ToListAsync();
@@ -29,7 +32,8 @@ namespace BitirmeProjesi.Controllers
 
 		}
 
-		[HttpPost]
+        [Authorize(Roles = "Admin,Muhendis,Depocu")]
+        [HttpPost]
 		public async Task<IActionResult> MalzemeKayıt(Malzeme addMalzemeRequest)
 		{
 			//Kayıt kısmı
@@ -53,7 +57,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> MalzemeDuzenleme(Guid id)
+        [Authorize(Roles = "Admin,Muhendis,Depocu")]
+        public async Task<IActionResult> MalzemeDuzenleme(Guid id)
 		{
 			//Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
 			var malzeme = await DbContext.Malzemeler.FirstOrDefaultAsync(x => x.Id == id);
@@ -76,8 +81,10 @@ namespace BitirmeProjesi.Controllers
 			}
 			return RedirectToAction("MalzemeListeleme");
 		}
+
 		[HttpPost]
-		public async Task<IActionResult> Delete(Malzeme updateMalzemeViewModel)
+        [Authorize(Roles = "Admin,Muhendis,Depocu")]
+        public async Task<IActionResult> Delete(Malzeme updateMalzemeViewModel)
 		{
 			//silme kısmı
 			var malzeme = DbContext.Malzemeler.Find(updateMalzemeViewModel.Id);
@@ -92,7 +99,8 @@ namespace BitirmeProjesi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> MalzemeDuzenleme(Malzeme updateMalzemeViewModel)
+        [Authorize(Roles = "Admin,Muhendis,Depocu")]
+        public async Task<IActionResult> MalzemeDuzenleme(Malzeme updateMalzemeViewModel)
 		{
 			//Düzenleme yapılan kısım
 			var malzeme = DbContext.Malzemeler.Find(updateMalzemeViewModel.Id);

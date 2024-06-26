@@ -21,16 +21,19 @@
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Telefon Numarası</label>
-        <input type="number" class="form-control" asp-for="TelefonNo">
+        <input type="number" class="form-control" asp-for="TelefonNo" maxlength="11">
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Maaş</label>
         <input type="number" class="form-control" asp-for="Maas">
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Yetki</label>
-        <input type="text" class="form-control" asp-for="Yetki">
-    </div>
+    <td width="150px">
+        <select class="form-control" name="Yetki">
+            <option value="SahaElamanı">Saha Elamanı</option>
+            <option value="MuhasabeElamanı">Muhasabe Elamanı</option>
+            <option value="DepoGörevlisi">Depo Görevlisi</option>
+        </select>
+    </td>
     <div class="mb-3">
         <label for="" class="form-label">Kan Grubu</label>
         <input type="text" class="form-control" asp-for="KanGrubu">
@@ -89,5 +92,7 @@
     <button type="submit" class="btn btn-primary">Düzenle</button>
       <button type="submit" class="btn btn-danger"
             asp-action="Delete"
-            asp-controller="Personel">Sil</button>
+            asp-controller="Personel" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">
+        Sil
+    </button>
 </form>

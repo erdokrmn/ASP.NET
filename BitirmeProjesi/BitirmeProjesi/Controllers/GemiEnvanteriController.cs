@@ -2,6 +2,7 @@
 using BitirmeProjesi.Models;
 using BitirmeProjesi.Models.ViewModel;
 using ExcelDataReader;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -21,6 +22,8 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+
+        [Authorize(Roles = "Admin,Muhendis")]
         public IActionResult GemiEnvanteriKayıt()
         {
             GemiEnvanteriViewModel model = new GemiEnvanteriViewModel();
@@ -35,6 +38,7 @@ namespace BitirmeProjesi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Muhendis")]
         public async Task<ActionResult> UploadFile(IFormFile file,GemiEnvanteriViewModel viewModel)
         {
             var SelectedgemiId = viewModel.gemiler.Id;

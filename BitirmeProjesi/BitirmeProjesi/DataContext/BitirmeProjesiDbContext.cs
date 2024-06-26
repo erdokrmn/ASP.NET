@@ -17,7 +17,6 @@ namespace BitirmeProjesi.DataContext
 		public DbSet<Malzeme> Malzemeler { get; set; }
         public DbSet<Masraf> Masraflar { get; set; }
         public DbSet<Personel> Personeller { get; set; }
-        public DbSet<Tevzi> Tevziler { get; set; }
         public DbSet<Zimmet> Zimmetler { get; set; }
 		public DbSet<Firma> Firmalar { get; set; }
 		public DbSet<Gelir> Gelirler { get; set; }
