@@ -22,6 +22,37 @@ namespace BitirmeProjesi.Controllers
         {
             this.DbContext = DbContext;
         }
+        [Authorize(Roles = "Admin,Muhendis")]
+        public IActionResult GemiEnvanteriSilme()
+        {
+            GemiEnvanteriViewModel model = new GemiEnvanteriViewModel();
+            List<SelectListItem> gemiler = (from x in DbContext.Gemiler.ToList()
+                                            select new SelectListItem
+                                            {
+                                                Text = x.GemiAdı,
+                                                Value = x.Id.ToString()
+                                            }).ToList();
+            ViewBag.Gemiler = gemiler;
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin,Muhendis")]
+        public async Task<IActionResult> Delete(Guid gemiId)
+        {
+            //silme kısmı
+            var gemiEnvanterleri = DbContext.GemiEnvanterleri.Where(g => g.GemiId == gemiId).ToList();
+            if (gemiEnvanterleri != null)
+            {
+                DbContext.GemiEnvanterleri.RemoveRange(gemiEnvanterleri);
+                await DbContext.SaveChangesAsync();
+                TempData["SuccessMessage2"] = "Gemi envanteri başarıyla silindi.";
+                return RedirectToAction("GemiEnvanteriSilme");
+                
+            }
+
+            return RedirectToAction("GemiEnvanteriSilme");
+        }
 
         [Authorize(Roles = "Admin,Muhendis")]
         public IActionResult GemiEnvanteriKayıt()
@@ -86,6 +117,7 @@ namespace BitirmeProjesi.Controllers
                                 // Veritabanına kaydet
                                 DbContext.GemiEnvanterleri.Add(rowData);
                                 DbContext.SaveChanges();
+                                TempData["SuccessMessage"] = "Gemi envanteri başarıyla eklendi.";
 
                             }
                             else
@@ -99,7 +131,7 @@ namespace BitirmeProjesi.Controllers
                 }
                 
             }
-            return View("GemiEnvanteriListeleme");
+            return RedirectToAction("Index", "Home");
         }
         private void SetProperty(GemiEnvanteri model, int index, object value)
         {

@@ -1,0 +1,17 @@
+﻿@model BitirmeProjesi.Models.GemiEnvanteri
+
+@if (TempData["SuccessMessage2"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage2"]
+    </div>
+}
+<form method="post" asp-action="Delete" asp-controller="GemiEnvanteri" class="mt-3">
+    <div class="mb-3">
+        <label>Gemi Adı</label>
+        @Html.DropDownListFor(m => m.GemiId, (List<SelectListItem>)ViewBag.Gemiler, "Seçiniz", new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">Sil</button>
+</form>
+

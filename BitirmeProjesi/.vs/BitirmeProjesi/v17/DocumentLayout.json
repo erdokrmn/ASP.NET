@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\controllers\\gccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\controllers\\gccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\models\\gemisurec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\models\\gemisurec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gc\\gclisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gc\\gclisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gemisurec\\gemisureclisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gemisurec\\gemisureclisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gemisurec\\gemisurecdurum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gemisurec\\gemisurecdurum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gemi\\gemiduzenleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gemi\\gemiduzenleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gemienvanteri\\gemienvanterisilme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gemienvanteri\\gemienvanterisilme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\models\\gc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\models\\gc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\models\\viewmodel\\gcmanuelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\models\\viewmodel\\gcmanuelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\controllers\\gemienvantericontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\controllers\\gemienvantericontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gc\\gcmanuelkay\u0131t.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gc\\gcmanuelkay\u0131t.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gemienvanteri\\gemienvanterikay\u0131t.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gemienvanteri\\gemienvanterikay\u0131t.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\maas\\puantaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\maas\\puantaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\controllers\\gccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\controllers\\gccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\maas\\maaslisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\maas\\maaslisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|c:\\users\\erdo\\documents\\asp.net\\asp.net-\\bitirmeprojesi\\bitirmeprojesi\\views\\gc\\gclisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9AC71F0-46DD-4D35-A9CD-28957B3E1977}|BitirmeProjesi\\BitirmeProjesi.csproj|solutionrelative:bitirmeprojesi\\views\\gc\\gclisteleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,142 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADMAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-27T01:32:56.489Z",
+              "DocumentIndex": 0,
+              "Title": "GemiSurec.cs",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\GemiSurec.cs",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Models\\GemiSurec.cs",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\GemiSurec.cs",
+              "RelativeToolTip": "BitirmeProjesi\\Models\\GemiSurec.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T02:37:32.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GemiDuzenleme.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Gemi\\GemiDuzenleme.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Gemi\\GemiDuzenleme.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Gemi\\GemiDuzenleme.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\Gemi\\GemiDuzenleme.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "GemiSurecDurum.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiSurec\\GemiSurecDurum.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GemiSurec\\GemiSurecDurum.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiSurec\\GemiSurecDurum.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\GemiSurec\\GemiSurecDurum.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-27T01:30:19.377Z",
+              "WhenOpened": "2024-06-27T02:36:03.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GCListeleme.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAHAAAA",
+              "Title": "GemiSurecListeleme.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiSurec\\GemiSurecListeleme.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GemiSurec\\GemiSurecListeleme.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiSurec\\GemiSurecListeleme.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\GemiSurec\\GemiSurecListeleme.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-27T01:17:08.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GCController.cs",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GCController.cs",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Controllers\\GCController.cs",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GCController.cs",
-              "RelativeToolTip": "BitirmeProjesi\\Controllers\\GCController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCYAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T00:43:00.302Z",
+              "WhenOpened": "2024-06-27T02:35:43.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GCManuelViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\ViewModel\\GCManuelViewModel.cs",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Models\\ViewModel\\GCManuelViewModel.cs",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\ViewModel\\GCManuelViewModel.cs",
-              "RelativeToolTip": "BitirmeProjesi\\Models\\ViewModel\\GCManuelViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T00:34:10.079Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:30:11.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GCManuelKay\u0131t.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCManuelKay\u0131t.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GC\\GCManuelKay\u0131t.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCManuelKay\u0131t.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\GC\\GCManuelKay\u0131t.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA9AAAA",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADkAAACgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-27T00:25:43.232Z",
+              "WhenOpened": "2024-06-27T02:08:53.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GCController.cs",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GCController.cs",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Controllers\\GCController.cs",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GCController.cs",
+              "RelativeToolTip": "BitirmeProjesi\\Controllers\\GCController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwC4AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T02:08:06.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Puantaj.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\Puantaj.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Maas\\Puantaj.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\Puantaj.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\Maas\\Puantaj.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAADoAAABAAAAA",
+              "Title": "GemiEnvanteriKay\u0131t.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriKay\u0131t.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriKay\u0131t.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriKay\u0131t.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriKay\u0131t.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-27T00:24:44.516Z"
+              "WhenOpened": "2024-06-27T02:05:57.868Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MaasListeleme.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
-              "RelativeToolTip": "BitirmeProjesi\\Views\\Maas\\MaasListeleme.cshtml",
+              "DocumentIndex": 9,
+              "Title": "GCListeleme.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\GC\\GCListeleme.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-27T00:24:42.497Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "1558b7af-4c1c-4134-8304-21310bd198f1",
-        "Display": 1,
-        "X": 261,
-        "Y": 31,
-        "Width": 1453,
-        "Height": 965,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+              "WhenOpened": "2024-06-27T02:02:30.756Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GC.cs",
-              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\GC.cs",
-              "RelativeDocumentMoniker": "BitirmeProjesi\\Models\\GC.cs",
-              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Models\\GC.cs",
-              "RelativeToolTip": "BitirmeProjesi\\Models\\GC.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "GemiEnvanteriSilme.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriSilme.cshtml",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriSilme.cshtml",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriSilme.cshtml",
+              "RelativeToolTip": "BitirmeProjesi\\Views\\GemiEnvanteri\\GemiEnvanteriSilme.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T02:02:26.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GemiEnvanteriController.cs",
+              "DocumentMoniker": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GemiEnvanteriController.cs",
+              "RelativeDocumentMoniker": "BitirmeProjesi\\Controllers\\GemiEnvanteriController.cs",
+              "ToolTip": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\Controllers\\GemiEnvanteriController.cs",
+              "RelativeToolTip": "BitirmeProjesi\\Controllers\\GemiEnvanteriController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDAAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T01:28:52.386Z",
+              "WhenOpened": "2024-06-27T02:01:27.911Z",
               "EditorCaption": ""
             }
           ]
