@@ -1,7 +1,7 @@
 ﻿@model BitirmeProjesi.Models.Masraf
 
 
-<form method="post" action="MasrafKayıt" class="mt-5">
+<form method="post" asp-action="MasrafDuzenleme" class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Id</label>
         <input type="text" class="form-control" asp-for="Id" readonly>
@@ -9,14 +9,18 @@
     <div class="mb-3">
         <label for="" class="form-label">Masraf Adı</label>
         <input type="text" class="form-control" asp-for="MasrafAdı">
+        <span asp-validation-for="MasrafAdı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Türü</label>
         <input type="text" class="form-control" asp-for="MasrafTipi">
+        <span asp-validation-for="MasrafTipi" class="text-danger"></span>
+
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Masraf Tutarı</label>
         <input type="text" class="form-control" asp-for="MasrafTutarı">
+        <span asp-validation-for="MasrafTutarı" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
@@ -35,9 +39,8 @@
 
 
     <button type="submit" class="btn btn-primary">Kayıt Et</button>
-    <button type="submit" class="btn btn-danger"
-            asp-action="Delete"
-            asp-controller="Masraf" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">
-        Sil
-    </button>
+</form>
+<form method="post" asp-action="Delete" asp-controller="Masraf" class="mt-3">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">Sil</button>
 </form>

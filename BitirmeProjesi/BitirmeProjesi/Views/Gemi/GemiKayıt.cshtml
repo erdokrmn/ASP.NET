@@ -1,22 +1,26 @@
 ﻿@model BitirmeProjesi.Models.Gemi
 
 
-<form method="post" action="GemiKayıt" class="mt-5">
+<form method="post" asp-action="GemiKayıt" class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Gemi Adı</label>
         <input type="text" class="form-control" asp-for="GemiAdı">
+        <span asp-validation-for="GemiAdı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Gemi Tipi</label>
         <input type="text" class="form-control" asp-for="GemiTipi">
+        <span asp-validation-for="GemiTipi" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Tershane Adı</label>
         <input type="text" class="form-control" asp-for="TershaneAdı">
+        <span asp-validation-for="TershaneAdı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Tahmini Bitirme Süresi(Gün)</label>
         <input type="number" class="form-control" asp-for="TahminiBitirmeSuresi">
+        <span asp-validation-for="TahminiBitirmeSuresi" class="text-danger"></span>
     </div>
    
 

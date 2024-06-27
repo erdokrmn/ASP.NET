@@ -36,6 +36,10 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> OzelGunKayıt(OzelGun addOzelGunRequest)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(addOzelGunRequest);
+            }
             //Kayıt kısmı
             var ozelgun = new OzelGun()
             {
@@ -93,6 +97,10 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> OzelGunDuzenleme(OzelGun updateOzelGun)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(updateOzelGun);
+            }
             //Düzenleme yapılan kısım
             var ozelgun = DbContext.OzelGunler.Find(updateOzelGun.Id);
             if (ozelgun != null)

@@ -43,17 +43,18 @@ namespace BitirmeProjesi.Controllers
 
         public async Task<IActionResult> FirmaKayıt(Firma addFirmaRequest)
 		{
-            //Kayıt kısmı
             if (!ModelState.IsValid)
             {
-                var errors = ModelState.Values.SelectMany(v => v.Errors);
-                foreach (var error in errors)
-                {
-                    Console.WriteLine(error.ErrorMessage); // veya loglama yapabilirsiniz
-                }
-                return View(addFirmaRequest);
+                // Masraflar property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("Masraflar");
 
+                // Tekrar kontrol et
+                if (!ModelState.IsValid)
+                {
+                    return View(addFirmaRequest);
+                }
             }
+
             var firma = new Firma()
             {
                 Id = Guid.NewGuid(),
@@ -61,77 +62,101 @@ namespace BitirmeProjesi.Controllers
                 TelofonNo = addFirmaRequest.TelofonNo,
                 Iban = addFirmaRequest.Iban,
                 İlgiliKisi = addFirmaRequest.İlgiliKisi,
+                //Masraflar = new List<Masraf>() // Varsayılan olarak boş koleksiyon
             };
 
             DbContext.Firmalar.Add(firma);
             await DbContext.SaveChangesAsync();
 
             return RedirectToAction("FirmaListeleme");
-
-
-
-
         }
 
-		[HttpGet]
-        [Authorize(Roles = "Admin,Muhasebeci")]
-        public async Task<IActionResult> FirmaDuzenleme(Guid id)
-		{
-			//Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
-			var firma = await DbContext.Firmalar.FirstOrDefaultAsync(x => x.Id == id);
-			if (firma != null)
-			{
-				var viewModel = new Firma()
-				{
-					Id = firma.Id,
-					FirmaAdı = firma.FirmaAdı,
-					TelofonNo = firma.TelofonNo,
-					Iban = firma.Iban,
-					İlgiliKisi = firma.İlgiliKisi,
-
-				};
-				return await Task.Run(() => View("FirmaDuzenleme", viewModel));
-			}
-			return RedirectToAction("FirmaListeleme");
-		}
+	
 
 		[HttpPost]
         [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> Delete(Firma updateFirma)
 		{
-			//silme kısmı
-			var firma = DbContext.Firmalar.Find(updateFirma.Id);
-			if (firma != null)
-			{
-				DbContext.Firmalar.Remove(firma);
-				await DbContext.SaveChangesAsync();
-				return RedirectToAction("FirmaListeleme");
-			}
+            var firma = await DbContext.Firmalar.FindAsync(updateFirma.Id);
+            if (firma == null)
+            {
+                return NotFound();
+            }
 
-			return RedirectToAction("FirmaListeleme");
-		}
+            DbContext.Firmalar.Remove(firma);
+            await DbContext.SaveChangesAsync();
 
-		[HttpPost]
+            return RedirectToAction("FirmaListeleme");
+        }
+
+
+        [HttpGet]
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> FirmaDuzenleme(Guid id)
+        {
+
+            // Güncelleme kısmına seçtiğimiz veriyi aktardığımız kısım
+            var firma = await DbContext.Firmalar.FirstOrDefaultAsync(x => x.Id == id);
+            if (firma != null)
+            {
+                var viewModel = new Firma()
+                {
+                    Id = firma.Id,
+                    FirmaAdı = firma.FirmaAdı,
+                    TelofonNo = firma.TelofonNo,
+                    Iban = firma.Iban,
+                    İlgiliKisi = firma.İlgiliKisi,
+                };
+                return View(viewModel);
+            }
+            return RedirectToAction("FirmaListeleme");
+        }
+
+        [HttpPost]
         [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> FirmaDuzenleme(Firma updateFirma)
 		{
-			//Düzenleme yapılan kısım
-			var firma = DbContext.Firmalar.Find(updateFirma.Id);
-			if (firma != null)
-			{
-				firma.FirmaAdı = updateFirma.FirmaAdı;
-				firma.TelofonNo = updateFirma.TelofonNo;
-				firma.Iban = updateFirma.Iban;
-				firma.İlgiliKisi = updateFirma.İlgiliKisi;
+
+            if (!ModelState.IsValid)
+            {
+                // Masraflar property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("Masraflar");
+
+                // Tekrar kontrol et
+                if (!ModelState.IsValid)
+                {
+                    return View(updateFirma);
+                }
+            }
+
+            var firma = await DbContext.Firmalar.FindAsync(updateFirma.Id);
+            if (firma == null)
+            {
+                // Firma bulunamadıysa, hata mesajı döndürelim
+                ModelState.AddModelError("", "Firma bulunamadı.");
+                return View(updateFirma);
+            }
+
+            firma.FirmaAdı = updateFirma.FirmaAdı;
+            firma.TelofonNo = updateFirma.TelofonNo;
+            firma.Iban = updateFirma.Iban;
+            firma.İlgiliKisi = updateFirma.İlgiliKisi;
+
+            try
+            {
+                await DbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                // Hata durumunda, ModelState'e hata ekleyelim ve kullanıcıya döndürelim
+                ModelState.AddModelError("", $"Hata: {ex.Message}");
+                return View(updateFirma);
+            }
+
+            return RedirectToAction("FirmaListeleme");
 
 
-				await DbContext.SaveChangesAsync();
-
-			}
-			return RedirectToAction("FirmaListeleme");
-
-
-		}
+        }
 
 
 	}

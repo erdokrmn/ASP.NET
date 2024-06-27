@@ -1,9 +1,9 @@
 
 2-) Maaşlar Gider tablosunda otomatik olarak gider gösterilecek(Maaşlar ödenince buradan düşecek.)
 4-) Listeleme işlemlerinden sonra navbarların tıklanmama olayı düzeltilecek
-5-) Görsellik eklenecek
 
-8-) Yanlış veri girildiğinde kayıt işlemleri hata mesajı döndürmesi yapılacak(Programı kapatmayacak)
+
+
 9-) Excell Yükleme ekranlarına görselliği düzenlenecek
 
 12-) Gelir ve giderlerin ortak listelendiği ekran yapılacak

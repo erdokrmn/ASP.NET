@@ -36,8 +36,12 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> GelirKayıt(Gelir addGelirRequest)
 		{
-			//Kayıt kısmı
-			var gelir = new Gelir()
+            if (!ModelState.IsValid)
+            {
+                return View(addGelirRequest);
+            }
+            //Kayıt kısmı
+            var gelir = new Gelir()
 			{
 				Id = Guid.NewGuid(),
 				FaturaKesilenAd = addGelirRequest.FaturaKesilenAd,
@@ -97,8 +101,12 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> GelirDuzenleme(Gelir updateGelirViewModel)
 		{
-			//Düzenleme yapılan kısım
-			var gelir = DbContext.Gelirler.Find(updateGelirViewModel.Id);
+            if (!ModelState.IsValid)
+            {
+                return View(updateGelirViewModel);
+            }
+            //Düzenleme yapılan kısım
+            var gelir = DbContext.Gelirler.Find(updateGelirViewModel.Id);
 			if (gelir != null)
 			{
 				gelir.FaturaKesilenAd = updateGelirViewModel.FaturaKesilenAd;

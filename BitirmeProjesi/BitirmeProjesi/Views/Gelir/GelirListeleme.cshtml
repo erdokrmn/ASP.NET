@@ -38,8 +38,17 @@
 					<td>@gelir.Kesinti</td>
 					<td>@c</td>
 					<td>@gelir.FaturaTarihi.ToString("dd-MM-yyyy")</td>
-					<td>@gelir.ÖdenmeTarihi</td>
+					<td>
+						@if (gelir.ÖdenmeTarihi!=null)
+						{
+							@gelir.ÖdenmeTarihi.Value.ToString("dd-MM-yyyy")
+						}
+						else
+						{
+							@gelir.ÖdenmeTarihi
+						}
 
+					</td>
 					<td>
 						<a href="GelirDuzenleme/@gelir.Id">Düzenle Veya Sil</a>
 					</td>

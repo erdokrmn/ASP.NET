@@ -38,8 +38,19 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhendis")]
         public async Task<IActionResult> GemiKayıt(Gemi addGemiRequest)
         {
-            //Kayıt kısmı
-            var gemi = new Gemi()
+			if (!ModelState.IsValid)
+			{
+				// Masraflar property'sine ait doğrulama hatalarını kaldır
+				ModelState.Remove("gemiEnvanterileri");
+
+				// Tekrar kontrol et
+				if (!ModelState.IsValid)
+				{
+					return View(addGemiRequest);
+				}
+			}
+			//Kayıt kısmı
+			var gemi = new Gemi()
             {
                 Id = Guid.NewGuid(),
                 GemiAdı = addGemiRequest.GemiAdı,
@@ -80,7 +91,7 @@ namespace BitirmeProjesi.Controllers
 
 		[HttpPost]
         [Authorize(Roles = "Admin,Muhendis")]
-        public async Task<IActionResult> Delete(GemiViewModel updateGemiViewModel)
+        public async Task<IActionResult> Delete(Gemi updateGemiViewModel)
 		{
 			//silme kısmı
 			var gemi = DbContext.Gemiler.Find(updateGemiViewModel.Id);
@@ -96,8 +107,19 @@ namespace BitirmeProjesi.Controllers
 
 		[HttpPost]
         [Authorize(Roles = "Admin,Muhendis")]
-        public async Task<IActionResult> GemiDuzenleme(GemiViewModel updateGemiViewModel)
+        public async Task<IActionResult> GemiDuzenleme(Gemi updateGemiViewModel)
 		{
+			if (!ModelState.IsValid)
+			{
+				// Masraflar property'sine ait doğrulama hatalarını kaldır
+				ModelState.Remove("gemiEnvanterileri");
+
+				// Tekrar kontrol et
+				if (!ModelState.IsValid)
+				{
+					return View(updateGemiViewModel);
+				}
+			}
 			//Düzenleme yapılan kısım
 			var gemi = DbContext.Gemiler.Find(updateGemiViewModel.Id);
 			if (gemi != null)

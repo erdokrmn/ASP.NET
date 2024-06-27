@@ -1,7 +1,7 @@
 ﻿@model BitirmeProjesi.Models.Gelir
 
 
-<form method="post" action="GelirDuzenleme" class="mt-5">
+<form method="post" asp-action="GelirDuzenleme" class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Id</label>
         <input type="text" class="form-control" asp-for="Id" readonly>
@@ -9,14 +9,17 @@
     <div class="mb-3">
         <label for="" class="form-label">Gelir Faturası</label>
         <input type="text" class="form-control" asp-for="FaturaKesilenAd">
+        <span asp-validation-for="FaturaKesilenAd" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Miktar</label>
         <input type="text" class="form-control" asp-for="Miktar">
+        <span asp-validation-for="Miktar" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Kesinti</label>
         <input type="text" class="form-control" asp-for="Kesinti">
+        <span asp-validation-for="Kesinti" class="text-danger"></span>
     </div>
 
     <div class="mb-3">

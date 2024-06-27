@@ -40,10 +40,10 @@ namespace BitirmeProjesi.Models
         [Required]
 		public DateTime IseBaslamaTarihi { get; set; }
 
-		[AllowNull]
+		
 		public DateTime IstenAyrılmaTarihi { get; set; }
 
-		[Required]
+	
 		public bool CalısmaDurumu { get; set; }
 
 
@@ -51,6 +51,6 @@ namespace BitirmeProjesi.Models
         public virtual ICollection<GC> GCler { get; set; }
         public virtual ICollection<GemiSurec> GemiSurecleri { get; set; }
 		public virtual ICollection<Zimmet> ZimmetEdilenPersoneller { get; set; }
-        public virtual ICollection<FingerPrintData> FingerPrintDatas { get; set; }
+
     }
 }

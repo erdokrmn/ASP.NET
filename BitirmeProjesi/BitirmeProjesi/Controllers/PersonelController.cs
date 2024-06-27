@@ -21,13 +21,37 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public IActionResult PersonelKayıt()
         {
-            return View();
+          
+                // Personel property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("IstenAyrılmaTarihi");
+                ModelState.Remove("Maaslar");
+                ModelState.Remove("GCler");
+                ModelState.Remove("GemiSurecleri");
+                ModelState.Remove("ZimmetEdilenPersoneller");
+                // Tekrar kontrol et
+                return View();
+           
+
         }
 
         [HttpPost]
         [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
         public async Task<IActionResult> PersonelKayıt(PersonelViewModel addPersonelRequest)
         {
+            if (!ModelState.IsValid)
+            {
+                // Personel property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("IstenAyrılmaTarihi");
+                ModelState.Remove("Maaslar");
+                ModelState.Remove("GCler");
+                ModelState.Remove("GemiSurecleri");
+                ModelState.Remove("ZimmetEdilenPersoneller");
+                // Tekrar kontrol et
+                if (!ModelState.IsValid)
+                {
+                    return View(addPersonelRequest);
+                }
+            }
             //Kayıt kısmı
             var personel = new Personel()
             {
@@ -49,8 +73,7 @@ namespace BitirmeProjesi.Controllers
                 CalıstıgıTershane = addPersonelRequest.CalıstıgıTershane,
                 AcilDurumdaUlaşılacakKişiNo = addPersonelRequest.AcilDurumdaUlaşılacakKişiNo,
                 IseBaslamaTarihi = addPersonelRequest.IseBaslamaTarihi,
-                IstenAyrılmaTarihi = addPersonelRequest.IstenAyrılmaTarihi,
-                CalısmaDurumu = addPersonelRequest.CalısmaDurumu,
+                CalısmaDurumu = true,
 
 
             };
@@ -78,7 +101,7 @@ namespace BitirmeProjesi.Controllers
 			var personel = await DbContext.Personeller.FirstOrDefaultAsync(x => x.Id == id);
 			if (personel != null)
 			{
-				var viewModel = new UpdatePersonelViewModel()
+				var viewModel = new PersonelViewModel()
 				{
                     Id=personel.Id,
 					Ad = personel.Ad,
@@ -109,7 +132,7 @@ namespace BitirmeProjesi.Controllers
 
 		[HttpPost]
         [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
-        public async Task<IActionResult> Delete(UpdatePersonelViewModel updatePersonelViewModel)
+        public async Task<IActionResult> Delete(PersonelViewModel updatePersonelViewModel)
         {
             //silme kısmı
             var personel = DbContext.Personeller.Find(updatePersonelViewModel.Id);
@@ -125,8 +148,22 @@ namespace BitirmeProjesi.Controllers
 
         [HttpPost]
         [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
-        public async Task<IActionResult> PersonelDuzenleme(UpdatePersonelViewModel updatePersonelViewModel)
+        public async Task<IActionResult> PersonelDuzenleme(PersonelViewModel updatePersonelViewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                // Personel property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("IstenAyrılmaTarihi");
+                ModelState.Remove("Maaslar");
+                ModelState.Remove("GCler");
+                ModelState.Remove("GemiSurecleri");
+                ModelState.Remove("ZimmetEdilenPersoneller");
+                // Tekrar kontrol et
+                if (!ModelState.IsValid)
+                {
+                    return View(updatePersonelViewModel);
+                }
+            }
             //Düzenleme yapılan kısım
             var personel =  DbContext.Personeller.Find(updatePersonelViewModel.Id);
             if (personel != null)

@@ -4,89 +4,107 @@
 @{
 }
 
-<form method="post" action="PersonelKayıt" class="mt-5">
+<form method="post" asp-action="PersonelKayıt">
+    
     <div class="mb-3">
         <label for="" class="form-label">Ad</label>
         <input type="text" class="form-control" asp-for="Ad">
+        <span asp-validation-for="Ad" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Soyad</label>
         <input type="text" class="form-control" asp-for="Soyad">
+        <span asp-validation-for="Soyad" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">TC Kimlik Numarası</label>
         <input type="number" class="form-control" asp-for="TcNo">
+        <span asp-validation-for="TcNo" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Telefon Numarası</label>
         <input type="number" class="form-control" asp-for="TelefonNo">
+        <span asp-validation-for="TelefonNo" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Maaş</label>
         <input type="number" class="form-control" asp-for="Maas">
+        <span asp-validation-for="Maas" class="text-danger"></span>
     </div>
     <td width="150px">
-        <select class="form-control" name="Yetki">
-            <option value="SahaElamanı">Saha Elamanı</option>
-            <option value="MuhasabeElamanı">Muhasabe Elamanı</option>
-            <option value="DepoGörevlisi">Depo Görevlisi</option>
-        </select>
+        <div class="mb-3">
+            <label for="" class="form-label">Elamanın yetkisini girin</label>
+            <select class="form-control" name="Yetki">
+                <option value="SahaElamanı">Saha Elamanı</option>
+                <option value="MuhasabeElamanı">Muhasabe Elamanı</option>
+                <option value="DepoGörevlisi">Depo Görevlisi</option>
+            </select>
+        </div>
     </td>
     <div class="mb-3">
         <label for="" class="form-label">Kan Grubu</label>
         <input type="text" class="form-control" asp-for="KanGrubu">
+        <span asp-validation-for="KanGrubu" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Doğum Yeri</label>
         <input type="text" class="form-control" asp-for="DoğumYeri">
+        <span asp-validation-for="DoğumYeri" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">İl</label>
         <input type="text" class="form-control" asp-for="Il">
+        <span asp-validation-for="Il" class="text-danger"></span>
     </div>
      <div class="mb-3">
         <label for="" class="form-label">İlce</label>
         <input type="text" class="form-control" asp-for="Ilce">
+        <span asp-validation-for="Ilce" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Adres</label>
         <input type="text" class="form-control" asp-for="Adres">
+        <span asp-validation-for="Adres" class="text-danger"></span>
 
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Cinsiyet</label>
+        <label for="" class="form-label">Cinsiyet(Kadın ise tıklayınız)</label>
         <input type="checkbox" class="form-check" asp-for="Cinsiyet">
+        <span asp-validation-for="Cinsiyet" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Doğum Yılı</label>
         <input type="text" class="form-control" asp-for="DoğumYılı">
+        <span asp-validation-for="DoğumYılı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">EDevlet Şifresi</label>
         <input type="text" class="form-control" asp-for="EDevletŞifre">
+        <span asp-validation-for="EDevletŞifre" class="text-danger"></span>
     </div>
    
     <div class="mb-3">
         <label for="" class="form-label">Çalıştığı Tershane</label>
         <input type="text" class="form-control" asp-for="CalıstıgıTershane">
+        <span asp-validation-for="CalıstıgıTershane" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Acil Durumda Ulaşılacak Kişinin Numarası</label>
         <input type="number" class="form-control" asp-for="AcilDurumdaUlaşılacakKişiNo">
+        <span asp-validation-for="AcilDurumdaUlaşılacakKişiNo" class="text-danger"></span>
     </div>
    
     <div class="mb-3">
         <label for="" class="form-label">İşe Başlama Tarihi</label>
         <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="IseBaslamaTarihi">
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">İşten Ayrılma Tarihi</label>
-        <input type="date" value="null" class="form-control" asp-for="IstenAyrılmaTarihi">
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Çalışma Durumu</label>
-        <input type="checkbox" class="form-check" asp-for="CalısmaDurumu">
-    </div>
+
    
     <button type="submit" class="btn btn-primary">Kayıt Et</button>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

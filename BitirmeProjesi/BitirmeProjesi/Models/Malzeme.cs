@@ -5,20 +5,20 @@ namespace BitirmeProjesi.Models
     public class Malzeme
     {
         public Guid Id { get; set; }
-        [Required]
-        public string MalzemeAdı { get; set; }
-        
-        public string? MalzemeTürü { get; set; }
+		[Required(ErrorMessage = "Boş bırakmayanız .")]
+		public string MalzemeAdı { get; set; }
+
+		[Required(ErrorMessage = "Boş bırakmayanız .")]
+		public string? MalzemeTürü { get; set; }
 
         public string? MalzemeSkt { get; set; }
-        [Required]
-        public int MalzemeAdet { get; set; }
+		[Required(ErrorMessage = "Boş bırakmayanız .")]
+		public int MalzemeAdet { get; set; }
 
-		[Required]
+		[Required(ErrorMessage = "Boş bırakmayanız .")]
 		public int MalzemeFiyatı { get; set; }
 
         public string? MalzemeKodu { get; set; }
-        [Required]
         public DateTime MalzemeAlınısTarih { get; set; }
         public bool ÜrünDurumu { get; set; }
 

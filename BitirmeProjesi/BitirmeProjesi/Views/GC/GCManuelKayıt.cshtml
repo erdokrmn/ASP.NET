@@ -1,0 +1,30 @@
+﻿@model BitirmeProjesi.Models.ViewModel.GCManuelViewModel
+
+
+<form method="post" asp-action="GCManuelKayıt" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">TC Kimlik Numarası</label>
+        <input type="text" class="form-control" asp-for="TcNo">
+        <span asp-validation-for="TcNo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Giriş Saati(Örnek 08:00)</label>
+        <input type="time" class="form-control" asp-for="GS">
+        <span asp-validation-for="GS" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Çıkış Saati(Örnek 17:00)</label>
+        <input type="time" class="form-control" asp-for="CS">
+        <span asp-validation-for="CS" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Tarih</label>
+        <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" asp-for="Tarih">
+    </div>
+
+
+
+
+
+    <button type="submit" class="btn btn-primary">Kayıt Et</button>
+</form>

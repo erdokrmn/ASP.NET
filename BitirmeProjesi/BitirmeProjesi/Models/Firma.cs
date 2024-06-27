@@ -14,8 +14,10 @@ namespace BitirmeProjesi.Models
         [StringLength(11, MinimumLength = 10, ErrorMessage = "Telefon numarası 10 veya 11 haneli olmalıdır.")]
         public string TelofonNo { get; set; }
 
+        [Required(ErrorMessage = "İlgili Kişi Adı gereklidir.")]
         public string İlgiliKisi { get; set; }
 
+        [Required(ErrorMessage = "Iban gereklidir.")]
         public string Iban { get; set; }
 
 

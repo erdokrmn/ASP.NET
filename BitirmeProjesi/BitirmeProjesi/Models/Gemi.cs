@@ -7,13 +7,14 @@ namespace BitirmeProjesi.Models
     {
         public Guid Id { get; set; }
 
-        [Required]
-        public string GemiAdı { get; set; }
-        
-        public string GemiTipi { get; set; }
+		[Required(ErrorMessage = "Boş Bırakmayınız.")]
+		public string GemiAdı { get; set; }
 
+		[Required(ErrorMessage = "Boş Bırakmayınız.")]
+		public string GemiTipi { get; set; }
+		[Required(ErrorMessage = "Boş Bırakmayınız.")]
 		public string TershaneAdı { get; set; }
-
+		[Required(ErrorMessage = "Boş Bırakmayınız.")]
 		public int TahminiBitirmeSuresi { get; set; }
         [Required]
         public DateTime GemiyeBaslamaTarihi { get; set; }

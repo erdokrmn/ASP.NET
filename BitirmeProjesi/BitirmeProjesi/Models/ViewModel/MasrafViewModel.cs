@@ -1,8 +1,12 @@
-﻿namespace BitirmeProjesi.Models.ViewModel
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BitirmeProjesi.Models.ViewModel
 {
 	public class MasrafViewModel
 	{
-		public Masraf masraflar { get; set; }
+        [Required(ErrorMessage = "Boş alanları doldurunuz.")]
+        public Masraf masraflar { get; set; }
+
 		public Firma firmalar { get; set; }
 
 		public List<Masraf> MasrafFirma { get; set; }

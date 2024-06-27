@@ -1,31 +1,37 @@
-﻿@model BitirmeProjesi.Models.ViewModel.UpdatePersonelViewModel;
+﻿@model BitirmeProjesi.Models.ViewModel.PersonelViewModel;
 
 @{
 }
-<form method="post" action="PersonelDuzenleme" class="mt-5">
+<form method="post" asp-action="PersonelDuzenleme"  class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Id</label>
         <input type="text" class="form-control" asp-for="Id" readonly>
+
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Ad</label>
         <input type="text" class="form-control" asp-for="Ad">
+        <span asp-validation-for="Ad" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Soyad</label>
         <input type="text" class="form-control" asp-for="Soyad">
+        <span asp-validation-for="Soyad" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">TC Kimlik Numarası</label>
         <input type="number" class="form-control" asp-for="TcNo">
+        <span asp-validation-for="TcNo" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Telefon Numarası</label>
         <input type="number" class="form-control" asp-for="TelefonNo" maxlength="11">
+        <span asp-validation-for="TelefonNo" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Maaş</label>
         <input type="number" class="form-control" asp-for="Maas">
+        <span asp-validation-for="Maas" class="text-danger"></span>
     </div>
     <td width="150px">
         <select class="form-control" name="Yetki">
@@ -37,22 +43,27 @@
     <div class="mb-3">
         <label for="" class="form-label">Kan Grubu</label>
         <input type="text" class="form-control" asp-for="KanGrubu">
+        <span asp-validation-for="KanGrubu" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Doğum Yeri</label>
         <input type="text" class="form-control" asp-for="DoğumYeri">
+        <span asp-validation-for="DoğumYeri" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">İl</label>
         <input type="text" class="form-control" asp-for="Il">
+        <span asp-validation-for="Il" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">İlce</label>
         <input type="text" class="form-control" asp-for="Ilce">
+        <span asp-validation-for="Ilce" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Adres</label>
         <input type="text" class="form-control" asp-for="Adres">
+        <span asp-validation-for="Adres" class="text-danger"></span>
 
     </div>
     <div class="mb-3">
@@ -62,19 +73,23 @@
     <div class="mb-3">
         <label for="" class="form-label">Doğum Yılı</label>
         <input type="text" class="form-control" asp-for="DoğumYılı">
+        <span asp-validation-for="DoğumYılı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">EDevlet Şifresi</label>
         <input type="text" class="form-control" asp-for="EDevletŞifre">
+        <span asp-validation-for="EDevletŞifre" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label for="" class="form-label">Çalıştığı Tershane</label>
         <input type="text" class="form-control" asp-for="CalıstıgıTershane">
+        <span asp-validation-for="CalıstıgıTershane" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Acil Durumda Ulaşılacak Kişinin Numarası</label>
         <input type="number" class="form-control" asp-for="AcilDurumdaUlaşılacakKişiNo">
+        <span asp-validation-for="AcilDurumdaUlaşılacakKişiNo" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
@@ -90,9 +105,9 @@
         <input type="checkbox" class="form-check" asp-for="CalısmaDurumu">
     </div>
     <button type="submit" class="btn btn-primary">Düzenle</button>
-      <button type="submit" class="btn btn-danger"
-            asp-action="Delete"
-            asp-controller="Personel" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">
-        Sil
-    </button>
+
+</form>
+<form method="post" asp-action="Delete" asp-controller="Personel" class="mt-3">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">Sil</button>
 </form>

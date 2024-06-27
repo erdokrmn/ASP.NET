@@ -1,33 +1,39 @@
 ﻿@model BitirmeProjesi.Models.Firma
 
 
-<form method="post" action="FirmaDuzenleme" class="mt-5">
+<form method="post" asp-action="FirmaDuzenleme" asp-controller="Firma" class="mt-5">
+    <input type="hidden" asp-for="Id" />
     <div class="mb-3">
-        <label for="" class="form-label">Id</label>
-        <input type="text" class="form-control" asp-for="Id" readonly>
-    </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Firma Adı</label>
+        <label for="FirmaAdı" class="form-label">Firma Adı</label>
         <input type="text" class="form-control" asp-for="FirmaAdı">
+        <span asp-validation-for="FirmaAdı" class="text-danger"></span>
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Telefon No</label>
+        <label for="TelofonNo" class="form-label">Telefon No</label>
         <input type="tel" class="form-control" asp-for="TelofonNo">
+        <span asp-validation-for="TelofonNo" class="text-danger"></span>
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Iban</label>
+        <label for="Iban" class="form-label">Iban</label>
         <input type="text" class="form-control" asp-for="Iban">
+        <span asp-validation-for="Iban" class="text-danger"></span>
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">İlgili Kişi</label>
-        <input type="text"  class="form-control" asp-for="İlgiliKisi">
+        <label for="İlgiliKisi" class="form-label">İlgili Kişi</label>
+        <input type="text" class="form-control" asp-for="İlgiliKisi">
+        <span asp-validation-for="İlgiliKisi" class="text-danger"></span>
     </div>
-
 
     <button type="submit" class="btn btn-primary">Düzenle</button>
-    <button type="submit" class="btn btn-danger"
-            asp-action="Delete"
-            asp-controller="Firma" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">
-        Sil
-    </button>
 </form>
+
+<form method="post" asp-action="Delete" asp-controller="Firma" class="mt-3">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Bu kaydı silmek istediğinizden emin misiniz?');">Sil</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

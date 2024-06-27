@@ -83,32 +83,36 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhendis")]
         public async Task<IActionResult> KayıtGemiSurec(GemiSurecFormViewModel formModel)
         {
-            foreach (var personelId in formModel.PersonelIds)
+            if (formModel.PersonelIds!=null )
             {
-                var existingGemiSurec = await DbContext.GemiSurecleri
-                    .FirstOrDefaultAsync(gs => gs.GemiEnvanteriId == formModel.GemiEnvanteriId && (gs.Durum == "Baslamadi" || gs.Durum== "Devam"));
+				foreach (var personelId in formModel.PersonelIds)
+				{
+					var existingGemiSurec = await DbContext.GemiSurecleri
+						.FirstOrDefaultAsync(gs => gs.GemiEnvanteriId == formModel.GemiEnvanteriId && (gs.Durum == "Baslamadi" || gs.Durum == "Devam"));
 
-                if (existingGemiSurec != null)
-                {
-                    // Mevcut kaydı güncelle
-                    existingGemiSurec.Durum = formModel.Durum;
-                    existingGemiSurec.Tarih = formModel.Tarih;
-                    DbContext.GemiSurecleri.Update(existingGemiSurec);
-                }
-                else
-                {
-                    // Yeni kayıt oluştur
-                    var gemiSurec = new GemiSurec
-                    {
-                        Id = Guid.NewGuid(),
-                        GemiEnvanteriId = formModel.GemiEnvanteriId,
-                        PersonelId = personelId,
-                        Durum = formModel.Durum,
-                        Tarih = formModel.Tarih
-                    };
-                    DbContext.GemiSurecleri.Add(gemiSurec);
-                }
-            }
+					if (existingGemiSurec != null)
+					{
+						// Mevcut kaydı güncelle
+						existingGemiSurec.Durum = formModel.Durum;
+						existingGemiSurec.Tarih = formModel.Tarih;
+						DbContext.GemiSurecleri.Update(existingGemiSurec);
+					}
+					else
+					{
+						// Yeni kayıt oluştur
+						var gemiSurec = new GemiSurec
+						{
+							Id = Guid.NewGuid(),
+							GemiEnvanteriId = formModel.GemiEnvanteriId,
+							PersonelId = personelId,
+							Durum = formModel.Durum,
+							Tarih = formModel.Tarih
+						};
+						DbContext.GemiSurecleri.Add(gemiSurec);
+					}
+				}
+			}
+           
 
             await DbContext.SaveChangesAsync();
             return RedirectToAction("GemiSurecKayıt");

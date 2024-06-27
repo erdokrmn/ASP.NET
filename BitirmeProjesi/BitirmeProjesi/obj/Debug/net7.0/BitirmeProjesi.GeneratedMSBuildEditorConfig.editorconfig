@@ -42,6 +42,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0NcR0NLYXnEsXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/GC/GCListeleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0NcR0NMaXN0ZWxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/GC/GCManuelKayıt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0NcR0NNYW51ZWxLYXnEsXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Gelir/GelirDuzenleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VsaXJcR2VsaXJEdXplbmxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -132,14 +140,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/OzelGun/OzelGunListeleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3plbEd1blxPemVsR3VuTGlzdGVsZW1lLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Parmak/main.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFybWFrXG1haW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Parmak/Parmak.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFybWFrXFBhcm1hay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/erdo/Documents/ASP.NET/ASP.NET-/BitirmeProjesi/BitirmeProjesi/Views/Personel/PersonelDuzenleme.cshtml]

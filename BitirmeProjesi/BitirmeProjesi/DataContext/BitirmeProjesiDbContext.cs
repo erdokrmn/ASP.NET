@@ -23,7 +23,6 @@ namespace BitirmeProjesi.DataContext
         public DbSet<User> Users { get; set; }
         public DbSet<OzelGun> OzelGunler { get; set; }
         public DbSet<Maas> Maaslar { get; set; }
-        public DbSet<FingerPrintData> FingerPrintDatas { get; set; }
 
         public DbSet<GC> GCs { get; set; }
 

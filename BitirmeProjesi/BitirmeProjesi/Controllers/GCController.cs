@@ -7,6 +7,7 @@ using BitirmeProjesi.DataContext;
 using System.Text.RegularExpressions;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
+using GC = BitirmeProjesi.Models.GC;
 
 namespace BitirmeProjesi.Controllers
 {
@@ -17,6 +18,80 @@ namespace BitirmeProjesi.Controllers
         public GCController(BitirmeProjesiDbContext DbContext)
         {
             this.DbContext = DbContext;
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
+        public async Task<IActionResult> GCListeleme()
+        {
+            var gCs = await DbContext.GCs.ToListAsync();
+
+            return View(gCs);
+
+
+        }
+		[HttpPost]
+		[Authorize(Roles = "Admin,Muhasebeci,Puantor")]
+		public async Task<IActionResult> Delete(Guid Id)
+		{
+			//silme kısmı
+			var gc = DbContext.GCs.Find(Id);
+			if (gc != null)
+			{
+				DbContext.GCs.Remove(gc);
+				await DbContext.SaveChangesAsync();
+				return RedirectToAction("GCListeleme");
+			}
+
+			return RedirectToAction("GCListeleme");
+		}
+		[Authorize(Roles = "Admin,Muhasebeci,Puantor")]
+        public IActionResult GCManuelKayıt()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin,Muhasebeci,Puantor")]
+        public async Task<IActionResult> GCManuelKayıt(GCManuelViewModel addGCRequest)
+        {
+            
+            if (!ModelState.IsValid)
+            {
+                // Masraflar property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("PersonelAd");
+                ModelState.Remove("PersonelId");
+                ModelState.Remove("AdSoyad");
+
+                // Tekrar kontrol et
+                if (!ModelState.IsValid)
+                {
+                    return View(addGCRequest);
+                }
+            }
+            var personel = await DbContext.Personeller.FirstOrDefaultAsync(p => p.TcNo == addGCRequest.TcNo);
+
+            if (personel == null)
+            {
+                ModelState.AddModelError("TCKimlikNo", "Girilen TC Kimlik Numarasına ait personel bulunamadı.");
+                return View(addGCRequest);
+            }
+            
+            //Kayıt kısmı
+            var gc = new GC()
+            {
+                Id = Guid.NewGuid(),
+                PersonelId= personel.Id,
+                AdSoyad=(personel.Ad + " " + personel.Soyad),
+                GS = addGCRequest.Tarih + addGCRequest.GS,
+                CS = addGCRequest.Tarih + addGCRequest.CS,
+                Tarih = addGCRequest.Tarih,
+
+            };
+            await DbContext.GCs.AddAsync(gc);
+            await DbContext.SaveChangesAsync();
+
+            return RedirectToAction("GCManuelKayıt");
         }
 
         [Authorize(Roles = "Admin,Muhasebeci,Puantor")]

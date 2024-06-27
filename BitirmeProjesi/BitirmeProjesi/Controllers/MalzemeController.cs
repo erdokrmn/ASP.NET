@@ -36,6 +36,19 @@ namespace BitirmeProjesi.Controllers
         [HttpPost]
 		public async Task<IActionResult> MalzemeKayıt(Malzeme addMalzemeRequest)
 		{
+			if (!ModelState.IsValid)
+			{
+				// Masraflar property'sine ait doğrulama hatalarını kaldır
+				ModelState.Remove("MalzemeTürü");
+				ModelState.Remove("MalzemeKodu");
+				ModelState.Remove("ZimmetEdilenMalzemeler");
+
+				// Tekrar kontrol et
+				if (!ModelState.IsValid)
+				{
+					return View(addMalzemeRequest);
+				}
+			}
 			//Kayıt kısmı
 			var malzeme = new Malzeme()
 			{
@@ -102,6 +115,19 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhendis,Depocu")]
         public async Task<IActionResult> MalzemeDuzenleme(Malzeme updateMalzemeViewModel)
 		{
+			if (!ModelState.IsValid)
+			{
+				// Masraflar property'sine ait doğrulama hatalarını kaldır
+				ModelState.Remove("MalzemeTürü");
+				ModelState.Remove("MalzemeKodu");
+				ModelState.Remove("ZimmetEdilenMalzemeler");
+
+				// Tekrar kontrol et
+				if (!ModelState.IsValid)
+				{
+					return View(updateMalzemeViewModel);
+				}
+			}
 			//Düzenleme yapılan kısım
 			var malzeme = DbContext.Malzemeler.Find(updateMalzemeViewModel.Id);
 			if (malzeme != null)

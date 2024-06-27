@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\images\\arkaplan.jpeg",
+      "PackagePath": "staticwebassets\\images\\arkaplan.jpeg"
+    },
+    {
       "Id": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\js\\JavaScript.js",
       "PackagePath": "staticwebassets\\js\\JavaScript.js"
     },

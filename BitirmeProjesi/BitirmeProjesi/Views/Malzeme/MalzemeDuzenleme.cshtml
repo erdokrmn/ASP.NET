@@ -1,7 +1,7 @@
 ﻿@model BitirmeProjesi.Models.Malzeme
 
 
-<form method="post" action="MalzemeDuzenleme" class="mt-5">
+<form method="post" asp-action="MalzemeDuzenleme" class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Id</label>
         <input type="text" class="form-control" asp-for="Id" readonly>
@@ -9,10 +9,12 @@
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Adı</label>
         <input type="text" class="form-control" asp-for="MalzemeAdı">
+        <span asp-validation-for="MalzemeAdı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Tipi</label>
         <input type="text" class="form-control" asp-for="MalzemeTürü">
+        <span asp-validation-for="MalzemeTürü" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">SKT</label>
@@ -21,10 +23,12 @@
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Adet</label>
         <input type="number" class="form-control" asp-for="MalzemeAdet">
+        <span asp-validation-for="MalzemeAdet" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Fiyatı</label>
         <input type="number" class="form-control" asp-for="MalzemeFiyatı">
+        <span asp-validation-for="MalzemeFiyatı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Kodu</label>

@@ -20,59 +20,62 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhasebeci")]
         public IActionResult MasrafKayıt()
 		{
-            List<SelectListItem> firmalar = (from x in DbContext.Firmalar.ToList()
-                                             select new SelectListItem
-                                             {
-                                                 Text = x.FirmaAdı,
-                                                 Value = x.Id.ToString()
-                                             }).ToList();
-            ViewBag.Firmalar = firmalar;
+            ViewBag.Firmalar = GetFirmalarSelectList();
             return View();
 		}
 
-		[HttpGet]
-        [Authorize(Roles = "Admin,Muhasebeci")]
-        public async Task<IActionResult> MasrafListeleme()
-		{
-			MasrafListelemeViewModel model = new MasrafListelemeViewModel();
-			model.MasrafFirma = DbContext.Masraflar.Include(b => b.Firma).ToList();
-			var masraflar = await DbContext.Masraflar.ToListAsync();
-
-			return View(model);
-
-
-		}
+	
 
 		[HttpPost]
         [Authorize(Roles = "Admin,Muhasebeci")]
-        public async Task<IActionResult> MasrafKayıt(MasrafViewModel addMasrafRequest)
+        public async Task<IActionResult> MasrafKayıt(Masraf addMasrafRequest)
 		{
-			var SelectedFirmaId = addMasrafRequest.firmalar.Id;
-			// alttaki ile kontrol yapıcam ileride
-			var Selectedmalzeme = DbContext.Malzemeler.Find(SelectedFirmaId);
-
-			//Kayıt kısmı
-			var masraf = new Masraf()
-			{
-				Id = Guid.NewGuid(),
-				MasrafAdı = addMasrafRequest.masraflar.MasrafAdı,
-				MasrafTipi = addMasrafRequest.masraflar.MasrafTipi,
-				MasrafTutarı = addMasrafRequest.masraflar.MasrafTutarı,
-				ÖdemeTarihi = addMasrafRequest.masraflar.ÖdemeTarihi,
-				ÖdenenTarih = addMasrafRequest.masraflar.ÖdenenTarih,
-				FirmaId= SelectedFirmaId,
-
+           
+            if (!ModelState.IsValid)
+            {
+                // Masraflar property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("Firma");
+                ModelState.Remove("MasrafTipi");
+                // Tekrar kontrol et
+                if (!ModelState.IsValid)
+                {
+                    ViewBag.Firmalar = GetFirmalarSelectList();
+                    return View(addMasrafRequest);
+                }
+            }
 
 
+            var masraf = new Masraf()
+            {
+                Id = Guid.NewGuid(),
+                MasrafAdı = addMasrafRequest.MasrafAdı,
+                MasrafTipi = addMasrafRequest.MasrafTipi,
+                MasrafTutarı = addMasrafRequest.MasrafTutarı,
+                ÖdemeTarihi = addMasrafRequest.ÖdemeTarihi,
+                ÖdenenTarih = addMasrafRequest.ÖdenenTarih,
+                FirmaId = addMasrafRequest.FirmaId,
+            };
 
-			};
-			await DbContext.Masraflar.AddAsync(masraf);
-			await DbContext.SaveChangesAsync();
+            await DbContext.Masraflar.AddAsync(masraf);
+            await DbContext.SaveChangesAsync();
 
-			return RedirectToAction("MasrafListeleme");
-		}
+            return RedirectToAction("MasrafListeleme");
+        }
 
-		[HttpGet]
+        [HttpGet]
+        [Authorize(Roles = "Admin,Muhasebeci")]
+        public async Task<IActionResult> MasrafListeleme()
+        {
+            MasrafListelemeViewModel model = new MasrafListelemeViewModel();
+            model.MasrafFirma = DbContext.Masraflar.Include(b => b.Firma).ToList();
+            var masraflar = await DbContext.Masraflar.ToListAsync();
+
+            return View(model);
+
+
+        }
+
+        [HttpGet]
         [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> MasrafDuzenleme(Guid id)
 		{
@@ -123,10 +126,21 @@ namespace BitirmeProjesi.Controllers
         [Authorize(Roles = "Admin,Muhasebeci")]
         public async Task<IActionResult> MasrafDuzenleme(Masraf updateMasrafViewModel)
 		{
-			var SelectedFirmaId = updateMasrafViewModel.FirmaId;
+            if (!ModelState.IsValid)
+            {
+                // Masraflar property'sine ait doğrulama hatalarını kaldır
+                ModelState.Remove("Firma");
+                ModelState.Remove("MasrafTipi");
+                // Tekrar kontrol et
+                if (!ModelState.IsValid)
+                {
+                    ViewBag.Firmalar = GetFirmalarSelectList();
+                    return View(updateMasrafViewModel);
+                }
+            }
 
-			//Düzenleme yapılan kısım
-			var masraf = DbContext.Masraflar.Find(updateMasrafViewModel.Id);
+            //Düzenleme yapılan kısım
+            var masraf = DbContext.Masraflar.Find(updateMasrafViewModel.Id);
 			if (masraf != null)
 			{
 				masraf.MasrafAdı = updateMasrafViewModel.MasrafAdı;
@@ -134,7 +148,7 @@ namespace BitirmeProjesi.Controllers
 				masraf.MasrafTutarı = updateMasrafViewModel.MasrafTutarı;
 				masraf.ÖdemeTarihi = masraf.ÖdemeTarihi;
 				masraf.ÖdenenTarih = updateMasrafViewModel.ÖdenenTarih;
-				masraf.FirmaId = SelectedFirmaId;
+				masraf.FirmaId = updateMasrafViewModel.FirmaId;
 
 
 				await DbContext.SaveChangesAsync();
@@ -144,5 +158,18 @@ namespace BitirmeProjesi.Controllers
 
 
 		}
-	}
+
+
+        private List<SelectListItem> GetFirmalarSelectList()
+        {
+            return DbContext.Firmalar
+                .Select(x => new SelectListItem
+                {
+                    Text = x.FirmaAdı,
+                    Value = x.Id.ToString()
+                })
+                .ToList();
+        }
+
+    }
 }

@@ -1,14 +1,16 @@
 ﻿@model BitirmeProjesi.Models.Malzeme
 
 
-<form method="post" action="MalzemeKayıt" class="mt-5">
+<form method="post" asp-action="MalzemeKayıt" class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Adı</label>
         <input type="text" class="form-control" asp-for="MalzemeAdı">
+        <span asp-validation-for="MalzemeAdı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Türü</label>
         <input type="text" class="form-control" asp-for="MalzemeTürü">
+        <span asp-validation-for="MalzemeTürü" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Skt</label>
@@ -17,10 +19,12 @@
     <div class="mb-3">
         <label for="" class="form-label">Adet</label>
         <input type="number" class="form-control" asp-for="MalzemeAdet">
+        <span asp-validation-for="MalzemeAdet" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Fiyat</label>
         <input type="number" class="form-control" asp-for="MalzemeFiyatı">
+        <span asp-validation-for="MalzemeFiyatı" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Malzeme Kodu</label>

@@ -135,7 +135,8 @@ namespace BitirmeProjesi.Controllers
                     Hafta2 = (int)g.Where(z => z.GS >= baslangicTarihi.AddDays(7) && z.GS < baslangicTarihi.AddDays(14)).Sum(z => (z.CS - z.GS).TotalHours),
                     Hafta3 = (int)g.Where(z => z.GS >= baslangicTarihi.AddDays(14) && z.GS < baslangicTarihi.AddDays(21)).Sum(z => (z.CS - z.GS).TotalHours),
                     Hafta4 = (int)g.Where(z => z.GS >= baslangicTarihi.AddDays(21) && z.GS < baslangicTarihi.AddDays(28)).Sum(z => (z.CS - z.GS).TotalHours),
-                    OzelGunCalismaSaati = OzelGunCalismaSaatleriniHesapla(g.Key, baslangicTarihi, baslangicTarihi.AddDays(28)) // Özel gün çalışma saatlerini hesapla
+					Hafta5 = (int)g.Where(z => z.GS >= baslangicTarihi.AddDays(28) && z.GS < baslangicTarihi.AddDays(30)).Sum(z => (z.CS - z.GS).TotalHours),
+					OzelGunCalismaSaati = OzelGunCalismaSaatleriniHesapla(g.Key, baslangicTarihi, baslangicTarihi.AddDays(28)) // Özel gün çalışma saatlerini hesapla
                 })
                 .ToList();
 
@@ -149,25 +150,25 @@ namespace BitirmeProjesi.Controllers
             foreach (var item in model)
             {
                 if (!string.IsNullOrEmpty(item.AdSoyad))
-                {
-                    // Personelin toplam çalışma saatlerini haftalık olarak hesapla
-                    var hafta1CalismaSaati = item.Hafta1 > 45 ? 45 : item.Hafta1;
-                    var hafta2CalismaSaati = item.Hafta2 > 45 ? 45 : item.Hafta2;
-                    var hafta3CalismaSaati = item.Hafta3 > 45 ? 45 : item.Hafta3;
-                    var hafta4CalismaSaati = item.Hafta4 > 45 ? 45 : item.Hafta4;
+				{ // Personelin toplam çalışma saatlerini haftalık olarak hesapla
+					var hafta1CalismaSaati = item.Hafta1 > 45 ? 45 : item.Hafta1;
+					var hafta2CalismaSaati = item.Hafta2 > 45 ? 45 : item.Hafta2;
+					var hafta3CalismaSaati = item.Hafta3 > 45 ? 45 : item.Hafta3;
+					var hafta4CalismaSaati = item.Hafta4 > 45 ? 45 : item.Hafta4;
+					var hafta5CalismaSaati = item.Hafta5 > 45 ? 45 : item.Hafta5;
 
-                    // Toplam çalışma saatlerini hesapla
-                    var toplamCalismaSaati = hafta1CalismaSaati + hafta2CalismaSaati + hafta3CalismaSaati + hafta4CalismaSaati;
+					// Toplam çalışma saatlerini hesapla
+					var toplamCalismaSaati = hafta1CalismaSaati + hafta2CalismaSaati + hafta3CalismaSaati + hafta4CalismaSaati + hafta5CalismaSaati;
 
-                    // Mesai saatlerini haftalık olarak hesapla
-                    var mesaiHafta1 = item.Hafta1 > 45 ? item.Hafta1 - 45 : 0;
-                    var mesaiHafta2 = item.Hafta2 > 45 ? item.Hafta2 - 45 : 0;
-                    var mesaiHafta3 = item.Hafta3 > 45 ? item.Hafta3 - 45 : 0;
-                    var mesaiHafta4 = item.Hafta4 > 45 ? item.Hafta4 - 45 : 0;
-                    var toplammesai = (mesaiHafta1 + mesaiHafta2 + mesaiHafta3 + mesaiHafta4);
-
-                    // Personelin maaş bilgisini al
-                    var personel = await DbContext.Personeller
+					// Mesai saatlerini haftalık olarak hesapla
+					var mesaiHafta1 = item.Hafta1 > 45 ? item.Hafta1 - 45 : 0;
+					var mesaiHafta2 = item.Hafta2 > 45 ? item.Hafta2 - 45 : 0;
+					var mesaiHafta3 = item.Hafta3 > 45 ? item.Hafta3 - 45 : 0;
+					var mesaiHafta4 = item.Hafta4 > 45 ? item.Hafta4 - 45 : 0;
+					var mesaiHafta5 = item.Hafta5 > 45 ? item.Hafta5 - 45 : 0;
+					var toplamMesai = mesaiHafta1 + mesaiHafta2 + mesaiHafta3 + mesaiHafta4 + mesaiHafta5;
+					// Personelin maaş bilgisini al
+					var personel = await DbContext.Personeller
                         .FirstOrDefaultAsync(p => (p.Ad + " " + p.Soyad) == item.AdSoyad);
 
                     if (personel != null)
@@ -197,7 +198,7 @@ namespace BitirmeProjesi.Controllers
                             var normalMaas = kalanCalismaSaati * saatlikUcret;
 
                             // Mesai ücretini hesapla (Mesai saatleri * saatlik ücret * 1.5)
-                            var mesaiMaasi = toplammesai * saatlikUcret * 1.5;
+                            var mesaiMaasi = toplamMesai * saatlikUcret * 1.5;
 
                             // Değer kısmı maaşını hesapla (Değer * saatlik ücret)
                             var degerMaasi = item.Deger * saatlikUcret * 7.5;

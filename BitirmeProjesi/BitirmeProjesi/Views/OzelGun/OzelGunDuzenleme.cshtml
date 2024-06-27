@@ -1,7 +1,7 @@
 ﻿@model BitirmeProjesi.Models.OzelGun
 
 
-<form method="post" action="OzelGunDuzenleme" class="mt-5">
+<form method="post" asp-action="OzelGunDuzenleme" class="mt-5">
     <div class="mb-3">
         <label for="" class="form-label">Id</label>
         <input type="text" class="form-control" asp-for="Id" readonly>
@@ -9,6 +9,7 @@
     <div class="mb-3">
         <label for="" class="form-label">Masraf Adı</label>
         <input type="text" class="form-control" asp-for="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
 

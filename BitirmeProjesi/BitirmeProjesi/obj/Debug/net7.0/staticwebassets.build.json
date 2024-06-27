@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u9elYKh/O/N2pzy6lvseS3FNNBGT5kT37RtsObndJik=",
+  "Hash": "LujPyAPgmHMHK/0IvGoUzEzuRtehpIY+JJNnAUNMgZM=",
   "Source": "BitirmeProjesi",
   "BasePath": "_content/BitirmeProjesi",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\images\\arkaplan.jpeg",
+      "SourceId": "BitirmeProjesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\",
+      "BasePath": "_content/BitirmeProjesi",
+      "RelativePath": "images/arkaplan.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\arkaplan.jpeg"
     },
     {
       "Identity": "C:\\Users\\erdo\\Documents\\ASP.NET\\ASP.NET-\\BitirmeProjesi\\BitirmeProjesi\\wwwroot\\js\\JavaScript.js",
