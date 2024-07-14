@@ -22,8 +22,6 @@ namespace BitirmeProjesi.Models
 		public DateTime Tarih { get; set; }
 
 
-
-
 		public Personel Personel { get; set; }
 
 		public GemiEnvanteri GemiEnvanteri { get; set; }
